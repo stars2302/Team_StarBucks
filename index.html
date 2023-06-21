@@ -10,7 +10,50 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header></header>
+  <header>
+    <!-- header_modal - 나서영 -->
+    <div class="modal_wrap bg_modal">
+      <form action="" method="post" class="bg_white section_pd login_form">
+        <fieldset class="cf">
+          <legend class="sub_tt title_pd font_gray">login</legend>
+          <div class="field cf">
+            <label for="user_id" class="hidden"></label>
+            <i class="fa-solid fa-user icon_M"></i>
+            <input type="text" id="user_id" placeholder="아이디" class="font_gray">
+          </div>
+
+          <div class="field cf">
+            <label for="user_password" class="hidden"></label>
+            <i class="fa-solid fa-lock"></i>
+            <input type="text" id="user_password" placeholder="비밀번호" class="font_gray">
+          </div>
+
+          <button class="submit bg_green font_white" type="submit">
+            <i class="fa-solid fa-power-off icon_M"></i>
+          </button>
+          
+          <p class="feedback">
+            아이디(로그인 전용 아이디) 또는 비밀번호를 잘못 입력했습니다.
+          </p>
+        </fieldset>
+
+        <div>
+          <button class="login_status cf font_s" type="button">
+            <i class="fa-solid fa-check"></i>
+            <p>로그인 상태 유지</p>
+          </button>
+
+          <ul class="login_find cf font_s">
+            <li><a href="#">아이디 찾기</a></li>
+            <li><a href="#">비밀번호 찾기</a></li>
+          </ul>
+        </div>
+
+        <i class="fa-solid fa-x close_btn icon_L"></i>
+      </form>
+    </div>
+    <!-- header_modal - 나서영 -->
+  </header>
   <main></main>
   <footer></footer>
 </body>
