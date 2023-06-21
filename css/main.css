@@ -1,4 +1,4 @@
-/* sec3 video - 나서영 */
+/* sec3 video - 나서영(시작) */
 .sec3 {
   height: 300px;
   background: linear-gradient(#00724b 240px, #f2f2f2 240px);
@@ -42,3 +42,4 @@
   top: 50%;
   transform: translate(-50%,-50%);
 }
+/* sec3 video - 나서영(종료) */
