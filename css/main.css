@@ -1,0 +1,47 @@
+/* sec3 video - 나서영 */
+.sec3 {
+  height: 300px;
+  background: linear-gradient(#00724b 240px, #f2f2f2 240px);
+}
+
+.sec3 .thumb {
+  margin: 45px 0;
+}
+
+.sec3 .container {
+  position: relative;
+  cursor: pointer;
+}
+
+.sec3 .container > * {
+  float: left;
+}
+
+.sec3 .text_box {
+  padding: 60px 0;
+  box-sizing: border-box;
+  margin-left: 45px;
+}
+
+.sec3 .character {
+  position: absolute;
+  bottom: -50px;
+  right: 10px;
+}
+
+
+.modal_wrap {
+  position: fixed;
+  left: 0; right: 0; bottom: 0; top: 0;
+  background-color: rgba(0, 0, 0, .9);
+  display: none;
+}
+
+.modal_wrap iframe {
+  width: 1000px;
+  height: 590px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
