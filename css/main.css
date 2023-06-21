@@ -3,7 +3,7 @@
   display: none;
 } */
 
-.modal_wrap form {
+header .modal_wrap form {
   width: 620px;
   height: 420px;
   border-radius: 3px;
@@ -14,45 +14,45 @@
   box-sizing: border-box;
 }
 
-.modal_wrap fieldset {
+header .modal_wrap fieldset {
   width: 400px;
   margin: 0 auto;
 }
 
-.modal_wrap fieldset legend {
+header .modal_wrap fieldset legend {
   text-align: center;
   line-height: 27px;
 }
 
-.modal_wrap fieldset .field {
+header .modal_wrap fieldset .field {
   float: left;
 }
 
-.modal_wrap [class^="login_"] * {
+header .modal_wrap [class^="login_"] * {
   float: left;
 }
 
-.modal_wrap fieldset .login_status {
+header .modal_wrap fieldset .login_status {
   float: left;
 }
 
-.modal_wrap .login_status i {
+header .modal_wrap .login_status i {
   color: rgba(80, 80, 80, .7);
   margin-right: 10px;
   line-height: 30px;
 }
 
-.modal_wrap fieldset .login_find {
+header .modal_wrap fieldset .login_find {
   float: right;
   opacity: 80%;
 }
 
-.modal_wrap .login_find li:first-child {
+header .modal_wrap .login_find li:first-child {
   margin-right: 10px;
   position: relative;
 }
 
-.modal_wrap .login_find li:first-child:after {
+header .modal_wrap .login_find li:first-child:after {
   content: '';
   position: absolute;
   width: 1.5px;
@@ -60,18 +60,18 @@
   background-color: rgba(80, 80, 80, .6);
 }
 
-.modal_wrap .login_find li:last-child {
+header .modal_wrap .login_find li:last-child {
   margin-left: 10px;
 }
 
-.modal_wrap form .close_btn {
+header .modal_wrap form .close_btn {
   position: absolute;
   right: 30px;
   top: 30px;
   cursor: pointer;
 }
 
-.modal_wrap fieldset .feedback {
+header .modal_wrap fieldset .feedback {
   font-size: 14px;
   line-height: 1;
   margin-bottom: 17px;
