@@ -30,11 +30,11 @@
 }
 
 
-.modal_wrap {
+.sec3 .modal_wrap {
   display: none;
 }
 
-.modal_wrap iframe {
+.sec3 .modal_wrap iframe {
   width: 1000px;
   height: 590px;
   position: absolute;
