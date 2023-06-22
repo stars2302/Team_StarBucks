@@ -1,2 +1,47 @@
 /* sec1 main_나서영(시작) */
+.sec1 {
+  margin-top: 210px;/* 임시. body padding-top으로 변경하자! */
+  height: 750px;
+  background: url('../img/sec1_bg.png') no-repeat center/cover;
+}
+
+.sec1 h2 {
+  margin-top: 30px;
+}
+
+.sec1 .items li {
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.sec1 .items li + li {
+  margin-left: 30px;
+}
+
+.sec1 .items li:nth-child(2n) {
+  margin-top: 60px;
+}
+
+.sec1 .items li h3 {
+  position: absolute;
+  left: -20px;
+  right: 20px;
+  text-align: center;
+  margin-top: -30px;
+  font-weight: bold;
+  opacity: 0;
+  transition: .3s;
+}
+
+.sec1 .items li:hover h3 {
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.sec1 .big_item {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 /* sec1 main_나서영(종료) */
