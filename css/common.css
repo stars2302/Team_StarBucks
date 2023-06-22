@@ -35,7 +35,9 @@ body {
 
 .container {
   width: 1280px;
+  min-width: 1280px;
   margin: 0 auto;
+  position: relative;
 }
 
 .section_pd {
@@ -113,6 +115,11 @@ div[class^=bg_]{
 }
 .bg_modal {
   background-color: rgba(0, 0, 0, .9);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
 
 
