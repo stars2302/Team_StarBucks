@@ -130,6 +130,7 @@ div[class^=bg_]{
   text-align: center;
   background-color: #505050;
   border-radius: 50%;
+  color: #fff;
 }
 
 .youtube i {
