@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import url('reset.css');
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @font-face {
@@ -34,7 +35,9 @@ body {
 
 .container {
   width: 1280px;
+  min-width: 1280px;
   margin: 0 auto;
+  position: relative;
 }
 
 .section_pd {
@@ -127,6 +130,7 @@ div[class^=bg_]{
   text-align: center;
   background-color: #505050;
   border-radius: 50%;
+  color: #fff;
 }
 
 .youtube i {
