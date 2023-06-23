@@ -14,17 +14,17 @@ header .modal_wrap form {
   box-sizing: border-box;
 }
 
-header .modal_wrap fieldset {
+header .modal_wrap .inner_form {
   width: 400px;
   margin: 0 auto;
 }
 
-header .modal_wrap fieldset legend {
+header .modal_wrap .inner_form h2 {
   text-align: center;
   line-height: 27px;
 }
 
-header .modal_wrap fieldset .field {
+header .modal_wrap .inner_form .field {
   float: left;
 }
 
@@ -32,7 +32,7 @@ header .modal_wrap [class^="login_"] * {
   float: left;
 }
 
-header .modal_wrap fieldset .login_status {
+header .modal_wrap .inner_form .login_status {
   float: left;
 }
 
@@ -42,7 +42,7 @@ header .modal_wrap .login_status i {
   line-height: 30px;
 }
 
-header .modal_wrap fieldset .login_find {
+header .modal_wrap .inner_form .login_find {
   float: right;
   opacity: 80%;
 }
@@ -71,10 +71,10 @@ header .modal_wrap form .close_btn {
   cursor: pointer;
 }
 
-header .modal_wrap fieldset .feedback {
+header .modal_wrap .inner_form .feedback {
+  height: 30px;
   font-size: 14px;
   line-height: 1;
-  margin-bottom: 17px;
   color: #f00;
   /* display: none; */
 }
