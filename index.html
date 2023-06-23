@@ -14,8 +14,8 @@
     <!-- header modal_나서영(시작) -->
     <div class="modal_wrap bg_modal">
       <form action="" method="post" class="bg_white section_pd login_form">
-        <fieldset class="cf">
-          <legend class="sub_tt title_pd font_gray">login</legend>
+        <div class="cf inner_form">
+          <h2 class="sub_tt title_pd font_gray">login</h2>
           <div class="field cf">
             <label for="user_id" class="hidden"></label>
             <i class="fa-solid fa-user icon_M"></i>
@@ -32,23 +32,22 @@
             <i class="fa-solid fa-power-off icon_M"></i>
           </button>
           
-          <p class="feedback">
-            아이디(로그인 전용 아이디) 또는 비밀번호를 잘못 입력했습니다.
-          </p>
-        </fieldset>
+          <div class="login_func cf">
+            <p class="feedback">
+              아이디(로그인 전용 아이디) 또는 비밀번호를 잘못 입력했습니다.
+            </p>
 
-        <fieldset>
-          <legend class="hidden">로그인 편의 기능</legend>
-          <button class="login_status cf font_s" type="button">
-            <i class="fa-solid fa-check"></i>
-            <p>로그인 상태 유지</p>
-          </button>
+            <button class="login_status cf font_s" type="button">
+              <i class="fa-solid fa-check"></i>
+              <p>로그인 상태 유지</p>
+            </button>
 
-          <ul class="login_find cf font_s">
-            <li><a href="#">아이디 찾기</a></li>
-            <li><a href="#">비밀번호 찾기</a></li>
-          </ul>
-        </fieldset>
+            <ul class="login_find cf font_s">
+              <li><a href="#">아이디 찾기</a></li>
+              <li><a href="#">비밀번호 찾기</a></li>
+            </ul>
+          </div>
+        </div>
 
         <i class="fa-solid fa-x close_btn icon_L"></i>
       </form>
