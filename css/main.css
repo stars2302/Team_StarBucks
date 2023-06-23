@@ -1,5 +1,6 @@
 /* header modal_나서영(시작) */
-/* .modal_wrap {
+/* 
+.modal_wrap {
   display: none;
 } */
 
@@ -24,15 +25,11 @@ header .modal_wrap .inner_form h2 {
   line-height: 27px;
 }
 
-header .modal_wrap .inner_form .field {
-  float: left;
-}
-
-header .modal_wrap [class^="login_"] * {
-  float: left;
-}
-
-header .modal_wrap .inner_form .login_status {
+header .modal_wrap .inner_form .field,
+header .modal_wrap .inner_form .login_status_wrap,
+header .modal_wrap .login_status i,
+header .modal_wrap .login_status span,
+header .modal_wrap .inner_form .login_find li {
   float: left;
 }
 
@@ -42,9 +39,16 @@ header .modal_wrap .login_status i {
   line-height: 30px;
 }
 
+header .login_status_wrap input:checked + label i {
+  color: #006439;
+}
+header .login_status_wrap input:checked + label span {
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
 header .modal_wrap .inner_form .login_find {
   float: right;
-  opacity: 80%;
 }
 
 header .modal_wrap .login_find li:first-child {
@@ -76,6 +80,6 @@ header .modal_wrap .inner_form .feedback {
   font-size: 14px;
   line-height: 1;
   color: #f00;
-  /* display: none; */
+  display: none;
 }
 /* header modal_나서영(종료) */
