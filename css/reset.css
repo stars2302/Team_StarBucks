@@ -44,7 +44,7 @@ table {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: inherit;
 }
 
 input,button {
