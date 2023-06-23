@@ -17,13 +17,13 @@
         <div class="cf inner_form">
           <h2 class="sub_tt title_pd font_gray">login</h2>
           <div class="field cf">
-            <label for="user_id" class="hidden"></label>
+            <label for="user_id" class="hidden">아이디</label>
             <i class="fa-solid fa-user icon_M"></i>
             <input type="text" id="user_id" placeholder="아이디" class="font_gray">
           </div>
 
           <div class="field cf">
-            <label for="user_password" class="hidden"></label>
+            <label for="user_password" class="hidden">비밀번호</label>
             <i class="fa-solid fa-lock"></i>
             <input type="text" id="user_password" placeholder="비밀번호" class="font_gray">
           </div>
@@ -37,10 +37,13 @@
               아이디(로그인 전용 아이디) 또는 비밀번호를 잘못 입력했습니다.
             </p>
 
-            <button class="login_status cf font_s" type="button">
-              <i class="fa-solid fa-check"></i>
-              <p>로그인 상태 유지</p>
-            </button>
+            <div class="login_status_wrap cf font_s" type="button">
+              <input type="checkbox" id="login_status" class="hidden">
+              <label for="login_status" class="login_status cf">
+                <i class="fa-solid fa-check"></i>
+                <span>로그인 상태 유지</span>
+              </label>
+            </div>
 
             <ul class="login_find cf font_s">
               <li><a href="#">아이디 찾기</a></li>
