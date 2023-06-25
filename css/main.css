@@ -1,0 +1,36 @@
+/* sec4 promotion_천혜영(시작) */
+/* 1280 / 100(%) = 12.8 → XX 균등한 4분할은 margin 20px 때문에 힘듦.. */
+/* 기본 4등분 : 1280 - (20+20+20) = 1220 / 4 = 305 */
+/* hover : 1280 - (20+20+20) = 1220 [635/195/195/195] */
+.sec4 .promotion h2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.sec4 .promotion div{
+  height: 690px;
+  width: 305px;
+  overflow:hidden;
+  margin:0 auto;
+  float: left;
+  transition: width 0.3s;
+}
+/* .promotion div[class^=event]:hover{
+  width: 635px;
+}  */
+.sec4 .promotion img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.sec4 .promotion div + div {
+  margin-left: 20px;
+}
+.max {
+  width: 635px;
+}
+.min {
+  width: 195px;
+}
+/* sec4 promotion_천혜영(종료) */
