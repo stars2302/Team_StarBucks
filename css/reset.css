@@ -59,3 +59,7 @@ input:focus,button:focus {
 button {
 	padding: 0;
 }
+
+img {
+	vertical-align: top;
+}
