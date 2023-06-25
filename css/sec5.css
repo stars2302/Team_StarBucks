@@ -1,0 +1,61 @@
+.sec5 {
+  width: 1280px;
+  margin: 0 auto;
+  height: 750px;
+  overflow: hidden;
+}
+.sec5 h2{
+  color: #1c1c1c;
+}
+.sec5 h3 a{
+  color: #505050;
+}
+.sec5 h2 span {
+  font-variant: small-caps;
+  font-size: 48px;
+  color: #99694b;
+}
+.sec5 .sec5li div{
+  border: violet 2px solid;
+  background-color: #1c1c1c;
+}
+.sec5 .sec5li img{
+  position: absolute;
+  right: 0px;
+  top: 90px;
+  background-color:#99694b ;
+}
+
+.sec5 .sec5li img:hover{
+transform: scale(1.1);
+transition: .3s;
+}
+
+.sec5 .sec5li > img{
+  position: absolute;
+  margin: 270px 510px 0 0;
+  width: 210px;
+  height: 210px;
+  overflow: hidden;
+}
+
+.sec5 .sec5li > img:hover{
+  transform: scale(1.1);
+  transition: .3s;
+
+}
+
+.sec5 .sec5li > h3{
+  margin-bottom: 90px;
+  }
+
+.sec5 .sec5li > h3 a:hover{
+  color: #006f40;
+  transition: .3s;
+}
+
+.sec5sub > h2{
+  margin-bottom: 30px;
+}
+
+
