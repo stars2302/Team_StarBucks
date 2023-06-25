@@ -1,0 +1,184 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@font-face {
+  font-family: 'Freight-Sans';
+  src: url(../fonts/Freight-Sans-Black.woff) format('woff');
+}
+
+/* .nanumgothic * {
+ font-family: 'Nanum Gothic', sans-serif;
+} */
+
+
+/* layout */
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #505050;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 1280px;
+  min-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section_pd {
+  padding: 90px 0;
+  box-sizing: border-box;
+}
+
+.title_pd {
+  margin-bottom: 60px;
+}
+
+.cf:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hidden {
+  position: fixed;
+  top: -99999em;
+  left: 0;
+}
+
+
+/* font */
+.main_tt {
+  font-size: 90px;
+  line-height: 90px;
+  font-family: 'Freight-Sans',sans-serif;
+  text-transform: uppercase;
+}
+
+.sub_tt {
+  font-size: 42px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.font_s {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.font_xs {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+
+/* color */
+.font_green {
+  color: #006f40;
+}
+.font_gray {
+  color: #1c1c1c;
+}
+.font_white {
+  color: #fff;
+}
+
+div[class^=bg_]{
+  width: 70%;
+  height: 50px;
+}
+
+.bg_green {
+  background-color: #006f40;
+}
+.bg_gray {
+  background-color: #272727;
+}
+.bg_white {
+  background-color: #fff;
+}
+.bg_modal {
+  background-color: rgba(0, 0, 0, .9);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+
+/* icon */
+.youtube {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: #505050;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.youtube i {
+  line-height: 30px;
+}
+
+.icon_L {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.icon_M {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+/* Form */
+form .field {
+  width: 320px;
+  height: 50px;
+  border: 1px solid rgba(28,28,28,.3);
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+form .field i,
+form .field input {
+  float: left;
+  line-height: 48px;
+}
+
+form .field i {
+  margin: 0 20px;
+}
+
+form .field i,
+form .field input::placeholder {
+  color: rgba(80, 80, 80, .7);
+}
+
+form .field:focus-within {
+  border: 1px solid #006f40;
+  /* border-width: 2px 1px; */
+}
+
+form .field:focus-within i {
+  color: #006f40;
+}
+
+form .field:focus-within i,
+form .field:focus-within input {
+  /* line-height: 46px; */
+  opacity: 1;
+}
+
+form .submit {
+  width: 70px;
+  height: 110px;
+  border-radius: 3px;
+  position: relative;
+  margin: 0 0 10px 10px;
+}
