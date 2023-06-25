@@ -1,0 +1,123 @@
+.sec2{
+  width: 1280px;
+  margin: 0 auto;
+}
+.sec2 h2{
+  text-align: center;
+}
+.container{
+  max-width: 1280px;
+}
+
+.slide_wrapper{
+  position: relative;
+  width: 1140px;
+  height: 460px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#text{
+  text-indent: -99999em;
+}
+
+.slides{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 360px;
+  width: 100%;
+  transition: left 1s ease-in;
+}
+.slides a{color: #505050;}
+
+/* 임시코드 시작 스타일 합칠 때 지워야합니다. 
+스크립트로 너비주고 움직일 예정입니다.*/
+
+/* .slides .icevanila{
+  left: 390px;
+}
+.slides .icelatte{
+  left: 780px;
+} */
+/* 임시코드 종료 */
+
+.slides .ice{
+width: 360px;
+height: 360px;
+position: absolute;
+color: #fff;
+box-sizing: border-box;
+background-repeat: no-repeat;
+}
+
+/* .ame{background: url(/img/ame.jpg);}
+.vanila{background-image: url(/img/vanila.jpg);}
+.latte{background-image: url(/img/latte.jpg);}
+.grape{background-image: url(/img/grape.jpg);}
+.lime{background-image: url(/img/lime.jpg);}
+.berry{background-image: url(/img/berry.jpg);} */
+
+/* sec2controls */
+.sec2controls{
+  text-align: center;
+  width:1280px;
+  position: absolute;
+  top:36%;
+}
+
+.sec2controls a{
+  font-size: 48px;
+  color: #505050;
+  box-sizing: border-box;
+
+}
+.sec2controls .prev{
+margin-right:calc(100% - 66px);
+}
+
+/* table */
+
+.slides .ice:hover{
+  width: 360px;
+  height: 360px;
+  background-color: rgba(0, 0, 0, .9);
+  transition: .2s ease-in;
+}
+
+.slides .ice:hover + .sce2_table{
+  display: block;
+  transition: 1s ease-in;
+}
+
+.icetext{
+  position: absolute;
+  padding-top: 390px;
+  width: 300px;
+}
+
+.sce2_table{
+  color: #fff;
+  position: absolute;
+  width: 290px;
+  display: none;
+}
+
+
+
+
+.sce2_table th, td{padding: 0 10px;}
+.sec2_tb1{left: 30px; bottom:35px;}
+.sec2_tb2{left: 420px; bottom:35px;}
+.sec2_tb3{left: 810px; bottom:35px;}
+.sec2_tb4{left: 1200px; bottom:35px;}
+.sec2_tb5{left: 1590px; bottom:35px;}
+.sec2_tb6{left: 1980px; bottom:35px;}
+
+.iceko1 ,.iceen1{left: 10px;}
+.iceko2 ,.iceen2{left: 400px;}
+.iceko3 ,.iceen3{left: 790px;}
+.iceko4 ,.iceen4{left: 1180px;}
+.iceko5 ,.iceen5{left: 1570px;}
+.iceko6 ,.iceen6{left: 1960px;}
+
+.ien {top: 30px}
