@@ -1,14 +1,43 @@
-let sec1_imgs = document.querySelectorAll('.sec1 .items li ');
-let sec1_bigItemImg = document.querySelector('.sec1 .big_item img');
+let sec1_smallItem = document.querySelectorAll('.sec1 .items li ');
 let sec1_bigItem = document.querySelector('.sec1 .big_item');
+let sec1_bigItemImg = sec1_bigItem.querySelector('img');
 
 
-sec1_imgs.forEach((img,idx)=>{
+sec1_smallItem.forEach((img,idx)=>{
   img.addEventListener('click',()=>{
     let targetIdx = idx+1;
-    sec1_bigItemImg.setAttribute('src',`img/sec1_item${targetIdx}_big.png`);
-    sec1_bigItem.classList.add("anime");
-    // sec1_bigItem.classList.remove("anime");
-    // 수업시간에 했던 shink헤더 참고해보기
-  });
+    
+    debounce(changeImg(sec1_bigItemImg,targetIdx),800);
+    ;
+  });//click
 }); 
+
+//모션주며 이미지 바꾸기
+function changeImg(target,index){
+  target.classList.add('hidden');
+  //
+  setTimeout(()=>{
+    target.setAttribute('src',`img/sec1_item${index}_big.png`);
+    target.classList.remove('hidden');
+    target.classList.add('active');
+  },10);
+  
+  setTimeout(()=>{
+    target.classList.remove('active');
+  },800);
+}
+
+
+//모션이 완료되기 전에 클릭하지 못하도록 막기
+function debounce(callback, time){
+  let slideTrigger = true;
+  return ()=>{
+    if(slideTrigger){
+      callback();
+      slideTrigger = false;
+      setTimeout(()=>{
+        slideTrigger= true;
+      },time)
+    }
+  }
+}
