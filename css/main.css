@@ -1,63 +1,64 @@
-.sec6 .story{
-    width: 100%;
-    height: 720px;
-    float: left;
-    position: relative;
-  }
-  .sec6 .Greener{
-    width: 50%;
-  }
-   .sec6 .Greener a{
-    background: url(../img/Greener_Image.png) no-repeat;
-    width: 100%;
-    height: 180px;
-    display: inline-block;
-    text-indent: -1000em;
-  }
-  .Greener_list > div{
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-  }
-  .sec6 .Greener a:hover{
-    transform: scale(1.05);
-  }
-  .sec6 .Greener h2{
-    margin-top: 30px;
-  }
-  .sec6 .Greener p{
-    width: 100%;
-    padding-top: 15px;
+/* header_성진영(시작) */
 
+.sec6 .story{
+  width: 100%;
+  height: 690px;
+}
+.sec6 .Greener{
+  width: 50%;
+}
+.sec6 .Greener img{
+  width: 100%;
+  height: 180px;
+}
+.Greener_list > div{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.sec6 .Greener img{
+  transition: 0.3s;
+}
+.sec6 .Greener img:hover{
+  transform: scale(1.05);
+}
+.sec6 .Greener h2{
+  margin-top: 30px;
+}
+.sec6 .Greener p{
+  width: 100%;
+  padding-top: 15px;
+}
+.sec6 .Greener em{
+  font-weight: bold;
+}
+.se6 .ethical{
+  position: relative;
+}
+.ethical .ethical_list div{
+  position: absolute;
+  right: 0;
+  bottom: 90px;
+  overflow: hidden;
   }
-  .sec6 .Greener em{
-    font-weight: bold;
-  }
-  
-  .sec6 .ethical a{
-    background: url(../img/ethical_Image.png) no-repeat;
-    width: 330px;
-    height: 480px;
-    display: inline-block;
-    text-indent: -1000em;
-    position: absolute;
-    left: 100%;
-    transform: translate(-100%, -210px);
-  }
-  .ethical_list > div{
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-  }
-  .sec6 .ethical a:hover{
-    transform: scale(1.05);
-  }
-  .sec6 article{
-    width: 990px;
-    transform: translate(290px, 135px);
-  }
-  .sec6 article p{
-    font-weight: bold;
-    width: 620px;
-    padding-top: 15px;
-  }
+.sec6 .ethical img{
+    transition: 0.3s;
+}
+.ethical img:hover{
+  transform: scale(1.05);
+}
+.sec6 figcaption {
+  position: absolute;
+  transform: translate(290px, 100px);
+  font-weight: bold;
+  width: 630px;
+  left: 0;
+  right: 0;
+  top: 540px;
+  bottom: 0;
+}
+.sec6 figcaption p{
+  padding-top: 15px;
+}
+
+/* header_성진영(종료) */
