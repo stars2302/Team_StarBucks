@@ -31,7 +31,14 @@
 
 
 .sec3 .modal_wrap {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.sec3 .modal_wrap.visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .sec3 .modal_wrap iframe {
