@@ -43,5 +43,11 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  transform: scale(1);
+  transition: .5s cubic-bezier(0.5, 1, 0.89, 1);
 }
+
+.sec1 .big_item.anime {
+  transform: scale(1.05);
+} 
 /* sec1 main_나서영(종료) */
