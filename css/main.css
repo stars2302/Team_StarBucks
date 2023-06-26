@@ -1,71 +1,76 @@
+/* header_성진영(시작) */
 header{
-    background:#fff;
-    height: 210px;
-  }
-  .fw{
-    font-weight:normal;
-  }
-  .top_menu{
-    position: relative;
-    height: 150px;
-    padding-top: 30px;
-    box-sizing: border-box;
-  }
-  .top_menu h1{
-    float: left;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .left{
-    float: left;
-  }
-  .left ul li{
-    float: left;
-    margin-left: 30px;
-  }
-  .right.icon_L{
-    float: right;
-  }
-  .right.icon_L ul li{
-    float: right;
-    margin-right: 30px;
-  }
-  .top_menu h1 a{
-    width: 90px;
-    height: 90px;
-    background: url(../img/h1_Logo.png)no-repeat;
-    text-indent: -1000em;
-    display: block;
-    margin: 0 auto;
-  }
-  .bottom_menu{
-    width: 100%;
-    background:linear-gradient( #fff 60px,rgba(255,255,255,.9) 60px);
-    transition: 0.2s;
-    overflow: hidden;
-  }
-  .bottom_menu:active{
-    border-bottom: 1px solid #006f40;
-    position: fixed;
-    height: 330px;
-    /* top:0; */
-    overflow: unset;
-  }
-  .bottom_menu .menu_list li{
-    width: 20%;
-    float: left;
-    position: relative;
-    font-weight: bold;
-    line-height: 60px;
-    transform: translateX(100px);
-  }
-  .bottom_menu .menu_list li dl{
-    position: absolute;
-  }
-  .bottom_menu .menu_list dl{
-    padding-top: 30px;
-  }
-  .bottom_menu dl a:hover{
-    border-bottom: 1px solid;
-  }
+  background:#fff;
+  height: 210px;
+}
+.fw{
+  font-weight:normal;
+}
+.top_menu{
+  position: relative;
+  height: 150px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.top_menu h1{
+  float: left;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.left{
+  float: left;
+}
+.left ul li{
+  float: left;
+  margin-left: 30px;
+}
+.right.icon_L{
+  float: right;
+}
+.right.icon_L ul li{
+  float: right;
+  margin-right: 30px;
+}
+.top_menu h1 a{
+  width: 90px;
+  height: 90px;
+  background: url(../img/h1_Logo.png)no-repeat;
+  text-indent: -1000em;
+  display: block;
+  margin: 0 auto;
+}
+.bottom_menu{
+  width: 100%;
+  background:linear-gradient( #fff 60px,rgba(255,255,255,.9) 60px);
+  transition: 0.2s;  
+  overflow: hidden;
+  height: 60px;
+}
+.bottom_menu .bottom_list{
+  height: 61px;
+  border-bottom: 1px #006f40 solid;
+}
+.bottom_menu:hover{
+  position: fixed;
+  height: 300px;
+  overflow: unset;
+}
+.bottom_menu .menu_list li{
+  width: 20%;
+  float: left;
+  position: relative;
+  font-weight: bold;
+  line-height: 60px;
+  transform: translateX(100px);
+}
+.bottom_menu .menu_list li dl{
+  position: absolute;
+}
+.bottom_menu .menu_list dl{
+  padding-top: 30px;
+}
+.bottom_menu dt a:hover{
+  border-bottom: 1px solid;
+}
+/* header_성진영(종료) */
