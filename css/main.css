@@ -35,6 +35,7 @@ header .modal_wrap .inner_form .login_find li {
 
 header .modal_wrap .submit {
   position: relative;
+  cursor: pointer;
 }
 
 header .modal_wrap .submit:active:after {
