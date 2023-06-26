@@ -15,6 +15,14 @@
   cursor: pointer;
 }
 
+.sec1 .items li img {
+  transition: transform .2s ease-out;
+}
+
+.sec1 .items li:active img {
+  transform: scale(0.95);
+}
+
 .sec1 .items li + li {
   margin-left: 30px;
 }
@@ -47,7 +55,24 @@
   transition: .5s cubic-bezier(0.5, 1, 0.89, 1);
 }
 
-.sec1 .big_item.anime {
-  transform: scale(1.05);
-} 
+.sec1 .big_item img {
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
+
+.sec1 .big_item img.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.sec1 .big_item img.active {
+  animation: bigbig 0.8s ease-out;
+}
+
+@keyframes bigbig {
+  0%{transform: scale(1);}
+  30%{transform: scale(1.05);}
+  100%{transform: scale(1);}
+}
 /* sec1 main_나서영(종료) */
