@@ -84,7 +84,7 @@ header .modal_wrap .login_find li:first-child {
 header .modal_wrap .login_find li:first-child:after {
   content: '';
   position: absolute;
-  width: 1.5px;
+  width: 1px;
   top: 5px; bottom: 5px; right: -10px;
   background-color: rgba(80, 80, 80, .6);
 }
