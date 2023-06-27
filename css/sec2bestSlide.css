@@ -11,12 +11,11 @@
   overflow: hidden;
 }
 
-.slides{
-  position: absolute;
-  left: 0;
-  top: 0;
+.slides ul{
   width: 100%;
   transition: left 1s ease-in;
+  margin: 0 auto;
+  /* overflow: hidden; */
 }
 .slides li {
   position: absolute;
@@ -39,7 +38,7 @@
   width: 360px;height: 360px;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, .7);
-  opacity: .1;
+  opacity: 0;
 }
 
 
@@ -68,22 +67,20 @@ box-sizing: border-box;
 background-repeat: no-repeat;
 }
 
-
 /* sec2controls */
-.sec2controls{
-  text-align: center;
-  width:1280px;
-  position: absolute;
-  top:36%;
-}
 
-.sec2controls a{
+.sec2prev, .sec2next{
   font-size: 48px;
   color: #505050;
   box-sizing: border-box;
-
+  top:calc(50% - 70px)
 }
 
-.sec2controls .prev{
-margin-right:calc(100% - 66px);
-}
+.sec2 .sec2prev{
+  position: absolute;
+  left:0;
+  }
+.sec2 .sec2next{
+  position: absolute;
+  right:0;
+  }
