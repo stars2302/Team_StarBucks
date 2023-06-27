@@ -18,7 +18,7 @@ let slideWrapper = document.querySelector('.slide_wrapper'),
       slideContainer.style.left = `${-num*(slideWith+slideMargin)}px`;
       currentSlideIdx = num;
     }
-
+    moveSlide(0);//한번 움직인다
     //버튼 클릭하면 움직이기
     nextBtn.addEventListener('click',()=>{
       if(currentSlideIdx < slideCount-slidePerView){
