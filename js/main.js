@@ -1,9 +1,3 @@
-// let login_btn = document.querySelector('.modal_wrap .submit');
-
-// login_btn.addEventListener('click',(e)=>{
-//   e.preventDefault();
-// });
-
 let modal_loginForm = document.querySelector('header .modal_wrap .login_form');
 let modal_loginInput = modal_loginForm.querySelectorAll('.field input');
 let modal_loginFeedback = modal_loginForm.querySelector('.login_func .feedback');
