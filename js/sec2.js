@@ -1,5 +1,5 @@
-let slideWrapper = document.querySelector('.slide_wrapper'),
-    slideContainer = document.querySelector('.slides'),
+let slideWrapper = document.querySelector('.sec2slide_wrap'),
+    slideContainer = slideWrapper.querySelector('.slides'),
     slides = slideContainer.querySelectorAll('.slides li'),
     slideCount = slides.length,
     slidePerView = 3,

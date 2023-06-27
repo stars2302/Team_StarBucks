@@ -3,7 +3,7 @@
   color: #1c1c1c;
 }
 
-.slide_wrap{
+.sec2 .slide_wrap{
   position: relative;
   width: 1140px;
   height: 460px;
@@ -11,25 +11,25 @@
   overflow: hidden;
 }
 
-.slides{
+.sec2 .slides{
   width: 100%;
   transition: left 1s ease-in;
   margin: 0 auto;
   position: absolute;
 }
-.slides li {
+.sec2 .slides li {
   position: absolute;
 }
-.slides li .sec2img{
+.sec2 .slides li .sec2img{
   width: 360px;
   overflow: hidden;
 }
-.slides li .sec2img:hover .sce2_table{
+.sec2 .slides li .sec2img:hover .sce2_table{
   transition: .3s ;
   opacity: 1;
 }
 
-.slides .sce2_table{
+.sec2 .slides .sce2_table{
   position: absolute;
   top:0;right:0;bottom:0;left:0;
   padding: 210px 0 0 40px;
