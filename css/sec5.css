@@ -1,61 +1,96 @@
+/* sec5 store_최성희(시작) */
 .sec5 {
   width: 1280px;
   margin: 0 auto;
   height: 750px;
-  overflow: hidden;
 }
+
 .sec5 h2{
   color: #1c1c1c;
 }
-.sec5 h3 a{
-  color: #505050;
-}
+
 .sec5 h2 span {
   font-variant: small-caps;
   font-size: 48px;
   color: #99694b;
 }
-.sec5 .sec5li div{
-  border: violet 2px solid;
-  background-color: #1c1c1c;
-}
-.sec5 .sec5li img{
-  position: absolute;
-  right: 0px;
-  top: 90px;
-  background-color:#99694b ;
+
+.sec5 h3 a{
+  color: #505050;
 }
 
-.sec5 .sec5li img:hover{
-transform: scale(1.1);
-transition: .3s;
+.sec5 .sec5_text{
+  margin-top: 70px;
 }
 
-.sec5 .sec5li > img{
+.sec5 .sec5_text li{
+  position: relative;
+}
+
+.sec5 .sec5_text li > p{
+  line-height: 18px;
   position: absolute;
-  margin: 270px 510px 0 0;
+  bottom:60px; 
+}
+
+.sec5 .sec5_text li > h3 a:hover{
+  color: #006f40;
+  transition: .3s;
+}
+
+.sec5 .sec5_text li h3{
+  margin-bottom: 90px;
+}
+
+.sec5 .sec5wrap{
+  width: 100%;
+  position: relative;
+}
+
+.sec5 .sec5_text{
+  position: absolute;
+}
+
+.sec5 img{
+  display:block;
+}
+
+.sec5 .sec5wrap #tab_content{
+  position: absolute;
+  right:0; 
+}
+
+.sec5 #tab_content div{
+  position: relative;
+  top:-20px;
+}
+
+.sec5 .sec5wrap div > p{
+  position:absolute;
+  right:510px;
+  top: 270px; 
   width: 210px;
   height: 210px;
   overflow: hidden;
 }
 
-.sec5 .sec5li > img:hover{
+.sec5 .sec5wrap div > a{
+  position: absolute;
+  right:0;
+  width: 480px;
+  height: 480px;
+  overflow: hidden;
+}
+
+.sec5 .sec5wrap div > p:hover img,
+.sec5 .sec5wrap div > a:hover img{
   transform: scale(1.1);
   transition: .3s;
-
 }
 
-.sec5 .sec5li > h3{
-  margin-bottom: 90px;
-  }
-
-.sec5 .sec5li > h3 a:hover{
-  color: #006f40;
-  transition: .3s;
+/* 일단 안보이게 가랴기 */
+.sec5 #tab_content > div{
+  display: none;
 }
 
-.sec5sub > h2{
-  margin-bottom: 30px;
-}
-
-
+/* sec5 store_최성희(종료) */
