@@ -11,11 +11,11 @@
   overflow: hidden;
 }
 
-.slides ul{
+.slides{
   width: 100%;
   transition: left 1s ease-in;
   margin: 0 auto;
-  /* overflow: hidden; */
+  position: absolute;
 }
 .slides li {
   position: absolute;
