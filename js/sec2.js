@@ -1,3 +1,4 @@
+/* sec2 bestSlide_최성희(시작) */  
 let slideWrapper = document.querySelector('.sec2slide_wrap'),
     slideContainer = slideWrapper.querySelector('.slides'),
     slides = slideContainer.querySelectorAll('.slides li'),
@@ -31,3 +32,4 @@ let slideWrapper = document.querySelector('.sec2slide_wrap'),
         moveSlide(currentSlideIdx - 3);
       }
     });
+/* sec2 bestSlide_최성희(종료) */
