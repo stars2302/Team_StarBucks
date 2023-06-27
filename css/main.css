@@ -56,10 +56,10 @@ header .modal_wrap .login_status i {
   line-height: 30px;
 }
 
-header .login_status_wrap input:checked + label i {
+header .modal_wrap .login_status_wrap input:checked + label i {
   color: #006439;
 }
-header .login_status_wrap input:checked + label span {
+header .modal_wrap .login_status_wrap input:checked + label span {
   color: #1c1c1c;
   font-weight: bold;
 }
