@@ -1,8 +1,10 @@
+/* sec2 bestSlide_최성희(시작) */
 .sec2 h2{
   text-align: center;
   color: #1c1c1c;
 }
 
+/* sec2_slide  */
 .sec2 .slide_wrap{
   position: relative;
   width: 1140px;
@@ -17,18 +19,52 @@
   margin: 0 auto;
   position: absolute;
 }
+
 .sec2 .slides li {
   position: absolute;
 }
+
 .sec2 .slides li .sec2img{
   width: 360px;
   overflow: hidden;
 }
+
 .sec2 .slides li .sec2img:hover .sce2_table{
   transition: .3s ;
   opacity: 1;
 }
 
+/* sce2_img */
+.sec2 .sec2img{
+  width: 360px;
+  height: 360px;
+}
+
+.sec2 .slides .ice{
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  color: #fff;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+.sec2 .icetext{
+  width: 350px;
+  margin: 30px 0 0 10px;
+  color: #505050;
+}
+
+.sec2 .icetext h3{
+  font-weight: bold;
+}
+
+.sec2 .icetext p{
+  font-size: 14px;
+  line-height:14px;
+}
+
+/* sce2_table */
 .sec2 .slides .sce2_table{
   position: absolute;
   top:0;right:0;bottom:0;left:0;
@@ -40,34 +76,19 @@
   opacity: 0;
 }
 
-
-.sce2_table th, td{padding: 0 10px;}
-.sce2_table{width: 100%;}
-
-.sec2img{
-  width: 360px;
-  height: 360px;
+.sec2 .sce2_table th,
+.sec2 .sce2_table td{
+  padding: 0 10px;
 }
-.icetext{
-  width: 350px;
-  margin: 30px 0 0 10px;
-  color: #505050;
-}
-.icetext h3{font-weight: bold;}
-.icetext p{font-size: 14px;line-height:14px;}
 
-.sec2 .slides .ice{
-width: 360px;
-height: 360px;
-position: absolute;
-color: #fff;
-box-sizing: border-box;
-background-repeat: no-repeat;
+.sec2 .sce2_table{
+  width: 100%;
 }
+
 
 /* sec2controls */
-
-.sec2prev, .sec2next{
+.sec2 .sec2prev, 
+.sec2 .sec2next{
   font-size: 48px;
   color: #505050;
   box-sizing: border-box;
@@ -77,8 +98,10 @@ background-repeat: no-repeat;
 .sec2 .sec2prev{
   position: absolute;
   left:0;
-  }
+}
+
 .sec2 .sec2next{
   position: absolute;
   right:0;
-  }
+}
+/* sec2 bestSlide_최성희(종료) */
