@@ -13,6 +13,8 @@
 }
 .sec7 ul {
   float: left;
+  position: relative;
+  transition: 0.5s;
 }
 .sec7 .notice_all {
   font-weight: bold;
