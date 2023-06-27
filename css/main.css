@@ -33,6 +33,14 @@ header .modal_wrap .inner_form .login_find li {
   float: left;
 }
 
+header .modal_wrap #user_password {
+  letter-spacing: -7px;
+}
+
+header .modal_wrap #user_password::placeholder{
+  letter-spacing: 0;
+}
+
 header .modal_wrap .submit {
   position: relative;
   cursor: pointer;
