@@ -8,12 +8,6 @@ let sec7_container = document.querySelector('.notice_slide'), //ul
 console.log();
 
 //공지사항 슬라이드 이동함수
-// if(sec7_count > 1){
-//   sec7_slides.forEach((item,idx)=>{
-//     item.style.height - `${idx*60}px`;
-//   })
-// }
-
 function sec7_move(num){
   sec7_container.style.top = `${-num*(sec7_height)}px`;
   sec7_idx = num;
