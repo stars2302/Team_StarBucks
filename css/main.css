@@ -515,7 +515,7 @@ header .modal_wrap .inner_form .feedback {
 }
 .sec5 .sec5_text li > h3 a:hover{
   color: #006f40;
-  opacity: .7;
+  opacity: .8;
 }
 
 .sec5 .sec5_text li h3{
@@ -565,7 +565,8 @@ header .modal_wrap .inner_form .feedback {
 }
 
 .sec5 .sec5wrap div > a:hover img{
-  transform: scale(1.1);
+  transform: scale(1.01);
+  opacity: .8;
 }
 
 .sec5 #tab_content{
