@@ -616,9 +616,9 @@ header .modal_wrap .inner_form .feedback {
 .sec6 .Greener em{
   font-weight: bold;
 }
-.sec6 .ethical{
+/* .sec6 .ethical{
   position: relative;
-}
+} */
 .sec6 .ethical .ethical_list div{
   position: absolute;
   right: 0;
@@ -646,3 +646,85 @@ header .modal_wrap .inner_form .feedback {
 }
 
 /* sec6 brand_성진영(종료) */
+
+
+/* sec7 notice_천혜영(시작) */
+.sec7.notice {
+  width: 100%;
+  height: 60px;
+  background: #b9aaa0;
+  line-height: 60px;
+  overflow: hidden;
+}
+.sec7 h2 {
+  font-weight: bold;
+  margin-right: 40px;
+  float: left;
+}
+.sec7 ul {
+  float: left;
+  position: relative;
+  transition: 0.5s;
+}
+.sec7 .notice_all {
+  font-weight: bold;
+  float: right;
+}
+.sec7 .container a:hover, .footer a:hover {
+  border-bottom: 1px solid;
+}
+/* sec7 notice_천혜영(종료) */
+
+/* footer,top button_천혜영(시작) */
+.footer {
+  width: 100%;
+  padding: 60px 0;
+  background: #272727;
+  text-align: center;
+}
+.footer li {
+  display: inline-block;
+}
+.footer .copyright li {
+  font-weight: bold;
+}
+.footer .copyright li+li:before{
+  content: '|';
+  margin: 0 20px;
+  font-weight: normal;
+  opacity: .5;
+}
+.footer .footer_menu li {
+  border: 1px solid;
+  border-radius: 3px;
+  width: 100px;
+  margin: 14px 5px;
+}
+.footer .address li, p {
+  margin: 0 10px;
+}
+/* top button */
+.top_button {
+  position: fixed;
+  right: calc(50% + -740px);
+  bottom: 420px;
+}
+.top_button .top_box {
+  position:relative;
+  height: 27px;
+}
+.top_button .top_arrow {
+  position: absolute;
+  color: #4f2b1c;
+  font-size: 24px;
+  left: calc(50% - 10.5px);
+  bottom: -2px;
+  opacity: .5;
+  animation: to_top 1.5s infinite;
+}
+@keyframes to_top {
+  from {transform: translateY(2px); opacity: 1;}
+  100% {transform: translateY(-5px); opacity: .5;}
+}
+
+/* footer,top button_천혜영(종료) */
