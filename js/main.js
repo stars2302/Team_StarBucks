@@ -1,47 +1,30 @@
-document.addEventListener('DOMContentLoaded',function(){
+let headerz = document.querySelector('.bottom_menu'),
+menu = document.querySelectorAll('.bottom_menu .menu_list li'),
+submenu = document.querySelectorAll('.bottom_menu .menu_list dl'),
+headerHeight = headerz.offsetHeight;
+let submenuHeight = 0;
 
+submenu.forEach(item=>{
+if(item.offsetHeight > submenuHeight){
+    submenuHeight = item.offsetHeight;
+}
+});
+console.log(submenuHeight);
+let headerzTotal = `${headerHeight + submenuHeight}px`;
 
-
-let mainMenu = document.querySelectorAll('.bottom_list > .menu_list > li'),
-    subMenu = document.querySelectorAll('.bottom_list menu_list dl'),
-    bottom = document.querySelector('.bottom_menu'),
-    bottomTop = bottom.offsetTop,
-    bottomHeight = bottom.offsetHeight;
-let subMenuHeight = 0;
+menu.forEach(tem=>{
+tem.addEventListener('mouseover',()=>{
+    headerz.style.height = headerzTotal;
+});
+tem.addEventListener('mouseout',()=>{
+    headerz.style.height = `${headerHeight}px`;
+});	
+});
 
 window.addEventListener('scroll',()=>{
-    if(window.scrollY > bottomTop){
-        bottom.classList.add('active');
-    }else{
-        bottom.classList.remove('active');
-    }
-});
-
-mainMenu.addEventListener('mouseover',()=>{
-    bottom.sty
-})
-
-
-
-
-
-
-subMenu.forEach(item=>{
-    if(item.offsetHeight > subMenuHeight){
-        subMenuHeight = item.offsetHeight;
-    }
-    console.log(subMenuHeight);
-});
-let totalHeight = `${bottomHeight + subMenuHeight + 60}px`;
-
-mainMenu.forEach(item=>{
-    item.addEventListener('mouseover',()=>{
-        bottom.style.height = totalHeight;
-    });
-    item.addEventListener('mouseout',()=>{
-        bottom.style.height = `${bottomHeight}px`;
-    });
-});
-
-
+if(window.scrollY > headerHeight){
+    headerz.classList.add('sticky');
+}else{
+    headerz.classList.remove('sticky');
+}
 });

@@ -46,15 +46,15 @@ header{
   transition: 0.2s;  
   overflow: hidden;
   height: 60px;
+  position: absolute;
 }
 .bottom_menu .bottom_list{
   height: 61px;
   border-bottom: 1px #006f40 solid;
 }
-.bottom_menu:hover{
+.bottom_menu.sticky{
   position: fixed;
-  height: 300px;
-  overflow: unset;
+  top:0;
 }
 .bottom_menu .menu_list li{
   width: 20%;
@@ -62,15 +62,23 @@ header{
   position: relative;
   font-weight: bold;
   line-height: 60px;
-  transform: translateX(100px);
+  text-align: center;
+}
+.bottom_menu .menu_list li a{
+  display: inline-block;
+}
+.bottom_menu dt:last-child{
+  margin-bottom: 40px;
 }
 .bottom_menu .menu_list li dl{
   position: absolute;
-}
-.bottom_menu .menu_list dl{
   padding-top: 30px;
+  width: 100%;
+  text-align: left;
+  padding-left: 100px;
 }
 .bottom_menu dt a:hover{
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */
+  color: #006f40;
 }
 /* header_성진영(종료) */
