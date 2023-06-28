@@ -1,62 +1,72 @@
 /* header_성진영(시작) */
 header{
   background:#fff;
-  height: 210px;
+    height: 210px;
+    position: fixed;
+    left:0; right: 0; top: 0;
+    z-index: 100;
+    overflow: hidden;
+    transition: .5s;
 }
-.fw{
+header .fw{
   font-weight:normal;
 }
-.top_menu{
+header .top_menu{
   position: relative;
   height: 150px;
-  padding-top: 30px;
+  /* padding-top: 30px;  */
   box-sizing: border-box;
 }
-.top_menu h1{
+.sticky .top_menu{
+  overflow: hidden;
+  height: 0;
+  transition: .5s;
+}
+header .top_menu h1{
   float: left;
   position: absolute;
   left: 50%;
+  top:30px;
   transform: translateX(-50%);
 }
-.left{
+header .left{
   float: left;
 }
-.left ul li{
+header .left ul li{
   float: left;
-  margin-left: 30px;
+  margin: 30px 30px 0 0;
 }
-.right.icon_L{
+header .right.icon_L{
   float: right;
 }
-.right.icon_L ul li{
+header .right.icon_L ul li{
   float: right;
-  margin-right: 30px;
+  margin: 30px 0 0 30px;
 }
-.top_menu h1 a{
+header .top_menu h1 a{
   width: 90px;
   height: 90px;
-  background: url(../img/h1_Logo.png)no-repeat;
+  background: url(../img/header_h1_Logo.png)no-repeat;
   text-indent: -1000em;
   display: block;
   margin: 0 auto;
 }
-.bottom_menu{
+header .bottom_menu{
   width: 100%;
-  background:linear-gradient( #fff 60px,rgba(255,255,255,.9) 60px);
-  transition: 0.2s;  
-  overflow: hidden;
+  background:linear-gradient( #fff 60px,rgba(255,255,255,.9) 60px); 
   height: 60px;
   position: absolute;
+  transition: .5s;
 }
-.bottom_menu .bottom_list{
+header .bottom_menu .bottom_list{
   height: 61px;
   border-bottom: 1px #006f40 solid;
 }
-.bottom_menu.sticky{
+header .bottom_menu.sticky{
   position: fixed;
   top:0;
 }
-.bottom_menu .menu_list li{
+header .bottom_menu .menu_list li{
   width: 20%;
   float: left;
   position: relative;
@@ -64,21 +74,27 @@ header{
   line-height: 60px;
   text-align: center;
 }
-.bottom_menu .menu_list li a{
+header .bottom_menu .menu_list li a{
   display: inline-block;
 }
-.bottom_menu dt:last-child{
+header .bottom_menu dt:last-child{
   margin-bottom: 40px;
 }
-.bottom_menu .menu_list li dl{
+header .bottom_menu .menu_list li dl{
   position: absolute;
   padding-top: 30px;
   width: 100%;
   text-align: left;
   padding-left: 100px;
 }
-.bottom_menu dt a:hover{
-  /* border-bottom: 1px solid; */
+header .bottom_menu dt a:hover{
   color: #006f40;
+}
+
+body{
+  padding-top: 210px;
+}
+body.sticky header{
+  height: 60px;
 }
 /* header_성진영(종료) */
