@@ -99,6 +99,51 @@
       </div>
   </nav>
   <!-- header_성진영(종료) -->
+    <!-- header modal_나서영(시작) -->
+    <div class="modal_wrap bg_modal">
+      <form action="" method="post" class="bg_white section_pd login_form">
+        <div class="cf inner_form">
+          <h2 class="sub_tt title_pd font_gray">login</h2>
+          <div class="field cf">
+            <label for="user_id" class="hidden">아이디</label>
+            <i class="fa-solid fa-user icon_M"></i>
+            <input type="text" id="user_id" placeholder="아이디" class="font_gray">
+          </div>
+
+          <div class="field cf">
+            <label for="user_password" class="hidden">비밀번호</label>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="user_password" placeholder="비밀번호" class="font_gray">
+          </div>
+
+          <button class="submit bg_green font_white" type="submit">
+            <i class="fa-solid fa-power-off icon_M"></i>
+          </button>
+          
+          <div class="login_func cf">
+            <p class="feedback">
+              아이디와 비밀번호는 필수 입력사항입니다.
+            </p>
+
+            <div class="login_status_wrap cf font_s">
+              <input type="checkbox" id="login_status" class="hidden">
+              <label for="login_status" class="login_status cf">
+                <i class="fa-solid fa-check"></i>
+                <span>로그인 상태 유지</span>
+              </label>
+            </div>
+
+            <ul class="login_find cf font_s">
+              <li><a href="#">아이디 찾기</a></li>
+              <li><a href="#">비밀번호 찾기</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <i class="fa-solid fa-x close_btn icon_L"></i>
+      </form>
+    </div>
+    <!-- header_modal_나서영(종료) -->
   </header>
   <main></main>
   <footer></footer>

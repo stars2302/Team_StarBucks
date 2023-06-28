@@ -82,3 +82,113 @@ header .bottom_menu dt a:hover{
   color: #006f40;
 }
 /* header_성진영(종료) */
+/* header modal_나서영(시작) */
+/* 
+.modal_wrap {
+  display: none;
+} */
+
+header .modal_wrap form {
+  width: 620px;
+  height: 420px;
+  border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+}
+
+header .modal_wrap .inner_form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+header .modal_wrap .inner_form h2 {
+  text-align: center;
+  line-height: 27px;
+}
+
+header .modal_wrap .inner_form .field,
+header .modal_wrap .inner_form .login_status_wrap,
+header .modal_wrap .login_status i,
+header .modal_wrap .login_status span,
+header .modal_wrap .inner_form .login_find li {
+  float: left;
+}
+
+header .modal_wrap #user_password {
+  letter-spacing: -7px;
+}
+
+header .modal_wrap #user_password::placeholder{
+  letter-spacing: 0;
+}
+
+header .modal_wrap .submit {
+  position: relative;
+  cursor: pointer;
+}
+
+header .modal_wrap .submit:active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .1);
+}
+
+
+header .modal_wrap .login_status i {
+  color: rgba(80, 80, 80, .7);
+  margin-right: 10px;
+  line-height: 30px;
+}
+
+header .modal_wrap .login_status_wrap input:checked + label i {
+  color: #006439;
+}
+header .modal_wrap .login_status_wrap input:checked + label span {
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+header .modal_wrap .inner_form .login_find {
+  float: right;
+}
+
+header .modal_wrap .login_find li:first-child {
+  margin-right: 10px;
+  position: relative;
+}
+
+header .modal_wrap .login_find li:first-child:after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  top: 5px; bottom: 5px; right: -10px;
+  background-color: rgba(80, 80, 80, .6);
+}
+
+header .modal_wrap .login_find li:last-child {
+  margin-left: 10px;
+}
+
+header .modal_wrap form .close_btn {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+header .modal_wrap .inner_form .feedback {
+  height: 30px;
+  font-size: 14px;
+  line-height: 1;
+  color: #f00;
+  display: none;
+}
+/* header modal_나서영(종료) */
