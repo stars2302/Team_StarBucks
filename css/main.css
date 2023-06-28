@@ -82,11 +82,12 @@ header .bottom_menu dt a:hover{
   color: #006f40;
 }
 /* header_성진영(종료) */
+
+
 /* header modal_나서영(시작) */
-/* 
 .modal_wrap {
   display: none;
-} */
+}
 
 header .modal_wrap form {
   width: 620px;
