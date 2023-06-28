@@ -33,9 +33,12 @@
   bottom:60px; 
 }
 
+.sec5 .sec5_text li > h3 a{
+  transition: .3s;
+}
+
 .sec5 .sec5_text li > h3 a:hover{
   color: #006f40;
-  transition: .3s;
 }
 
 .sec5 .sec5_text li h3{
@@ -82,9 +85,17 @@
   overflow: hidden;
 }
 
+.sec5 .sec5wrap div > p img,
+.sec5 .sec5wrap div > a img{
+  transition: .3s;
+}
+
 .sec5 .sec5wrap div > p:hover img,
 .sec5 .sec5wrap div > a:hover img{
   transform: scale(1.1);
+}
+
+.sec5 #tab_content{
   transition: .3s;
 }
 
