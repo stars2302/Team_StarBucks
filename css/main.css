@@ -510,9 +510,12 @@ header .modal_wrap .inner_form .feedback {
 .sec5 .sec5_text li > h3 a{
   transition: .3s;
 }
-.sec5 .sec5_text li > h3 a.active,
+.sec5 .sec5_text li > h3 a.active{
+  color: #006f40;
+}
 .sec5 .sec5_text li > h3 a:hover{
   color: #006f40;
+  opacity: .7;
 }
 
 .sec5 .sec5_text li h3{
