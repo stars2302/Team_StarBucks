@@ -192,3 +192,85 @@ header .modal_wrap .inner_form .feedback {
   display: none;
 }
 /* header modal_나서영(종료) */
+/* sec1 main_나서영(시작) */
+.sec1 {
+  margin-top: 210px;/* 임시. body padding-top으로 변경하자! */
+  height: 750px;
+  background: url('../img/sec1_bg.png') no-repeat center/cover;
+}
+
+.sec1 h2 {
+  margin-top: 30px;
+}
+
+.sec1 .items li {
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.sec1 .items li img {
+  transition: transform .2s ease-out;
+}
+
+.sec1 .items li:active img {
+  transform: scale(0.95);
+}
+
+.sec1 .items li + li {
+  margin-left: 30px;
+}
+
+.sec1 .items li:nth-child(2n) {
+  margin-top: 60px;
+}
+
+.sec1 .items li h3 {
+  position: absolute;
+  left: -20px;
+  right: 20px;
+  text-align: center;
+  margin-top: -30px;
+  font-weight: bold;
+  opacity: 0;
+  transition: .3s;
+}
+
+.sec1 .items li:hover h3 {
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.sec1 .big_item {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: scale(1);
+  transition: .5s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.sec1 .big_item > a {
+  display: block;
+}
+
+.sec1 .big_item img {
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
+
+.sec1 .big_item img.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.sec1 .big_item img.active {
+  animation: bigbig 0.8s ease-out;
+}
+
+@keyframes bigbig {
+  0%{transform: scale(1);}
+  30%{transform: scale(1.05);}
+  100%{transform: scale(1);}
+}
+/* sec1 main_나서영(종료) */
