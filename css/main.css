@@ -1,0 +1,728 @@
+/* header_성진영(시작) */
+header{
+  background:#fff;
+  height: 210px;
+}
+header .fw{
+  font-weight:normal;
+}
+header .top_menu{
+  position: relative;
+  height: 150px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+header .top_menu h1{
+  float: left;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .left{
+  float: left;
+}
+header .left ul li{
+  float: left;
+  margin-left: 30px;
+}
+header .right.icon_L{
+  float: right;
+}
+header .right.icon_L ul li{
+  float: right;
+  margin-right: 30px;
+}
+header .top_menu h1 a{
+  width: 90px;
+  height: 90px;
+  background: url(../img/header_h1_Logo.png)no-repeat;
+  text-indent: -1000em;
+  display: block;
+  margin: 0 auto;
+}
+header .bottom_menu{
+  width: 100%;
+  background:linear-gradient( #fff 60px,rgba(255,255,255,.9) 60px);
+  transition: 0.2s;  
+  overflow: hidden;
+  height: 60px;
+  position: absolute;
+}
+header .bottom_menu .bottom_list{
+  height: 61px;
+  border-bottom: 1px #006f40 solid;
+}
+header .bottom_menu.sticky{
+  position: fixed;
+  top:0;
+}
+header .bottom_menu .menu_list li{
+  width: 20%;
+  float: left;
+  position: relative;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+}
+header .bottom_menu .menu_list li a{
+  display: inline-block;
+}
+header .bottom_menu dt:last-child{
+  margin-bottom: 40px;
+}
+header .bottom_menu .menu_list li dl{
+  position: absolute;
+  padding-top: 30px;
+  width: 100%;
+  text-align: left;
+  padding-left: 100px;
+}
+header .bottom_menu dt a:hover{
+  /* border-bottom: 1px solid; */
+  color: #006f40;
+}
+/* header_성진영(종료) */
+
+
+/* header modal_나서영(시작) */
+header .modal_wrap {
+  display: none;
+}
+
+header .modal_wrap form {
+  width: 620px;
+  height: 420px;
+  border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+}
+
+header .modal_wrap .inner_form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+header .modal_wrap .inner_form h2 {
+  text-align: center;
+  line-height: 27px;
+}
+
+header .modal_wrap .inner_form .field,
+header .modal_wrap .inner_form .login_status_wrap,
+header .modal_wrap .login_status i,
+header .modal_wrap .login_status span,
+header .modal_wrap .inner_form .login_find li {
+  float: left;
+}
+
+header .modal_wrap #user_password {
+  letter-spacing: -7px;
+}
+
+header .modal_wrap #user_password::placeholder{
+  letter-spacing: 0;
+}
+
+header .modal_wrap .submit {
+  position: relative;
+  cursor: pointer;
+}
+
+header .modal_wrap .submit:active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .1);
+}
+
+
+header .modal_wrap .login_status i {
+  color: rgba(80, 80, 80, .7);
+  margin-right: 10px;
+  line-height: 30px;
+}
+
+header .modal_wrap .login_status_wrap input:checked + label i {
+  color: #006439;
+}
+header .modal_wrap .login_status_wrap input:checked + label span {
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+header .modal_wrap .inner_form .login_find {
+  float: right;
+}
+
+header .modal_wrap .login_find li:first-child {
+  margin-right: 10px;
+  position: relative;
+}
+
+header .modal_wrap .login_find li:first-child:after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  top: 5px; bottom: 5px; right: -10px;
+  background-color: rgba(80, 80, 80, .6);
+}
+
+header .modal_wrap .login_find li:last-child {
+  margin-left: 10px;
+}
+
+header .modal_wrap form .close_btn {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+header .modal_wrap .inner_form .feedback {
+  height: 30px;
+  font-size: 14px;
+  line-height: 1;
+  color: #f00;
+  display: none;
+}
+/* header modal_나서영(종료) */
+/* sec1 main_나서영(시작) */
+.sec1 {
+  height: 750px;
+  background: url('../img/sec1_bg.png') no-repeat center/cover;
+}
+
+.sec1 h2 {
+  margin-top: 30px;
+}
+
+.sec1 .items li {
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.sec1 .items li img {
+  transition: transform .2s ease-out;
+}
+
+.sec1 .items li:active img {
+  transform: scale(0.95);
+}
+
+.sec1 .items li + li {
+  margin-left: 30px;
+}
+
+.sec1 .items li:nth-child(2n) {
+  margin-top: 60px;
+}
+
+.sec1 .items li h3 {
+  position: absolute;
+  left: -20px;
+  right: 20px;
+  text-align: center;
+  margin-top: -30px;
+  font-weight: bold;
+  opacity: 0;
+  transition: .3s;
+}
+
+.sec1 .items li:hover h3 {
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.sec1 .big_item {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: scale(1);
+  transition: .5s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.sec1 .big_item > a {
+  display: block;
+}
+
+.sec1 .big_item img {
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
+
+.sec1 .big_item img.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.sec1 .big_item img.active {
+  animation: bigbig 0.8s ease-out;
+}
+
+@keyframes bigbig {
+  0%{transform: scale(1);}
+  30%{transform: scale(1.05);}
+  100%{transform: scale(1);}
+}
+/* sec1 main_나서영(종료) */
+
+/* sec2 bestSlide_최성희(시작) */
+.sec2 h2{
+  text-align: center;
+  color: #1c1c1c;
+}
+
+/* sec2_slide  */
+.sec2 .slide_wrap{
+  position: relative;
+  width: 1140px;
+  height: 460px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.sec2 .slides{
+  width: 100%;
+  transition: left 1s ease-in;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.sec2 .slides li {
+  position: absolute;
+}
+
+.sec2 .slides li .sec2img{
+  width: 360px;
+  overflow: hidden;
+}
+
+.sec2 .slides li .sec2img:hover .sce2_table{
+  transition: .3s ;
+  opacity: 1;
+}
+
+/* sce2_img */
+.sec2 .sec2img{
+  width: 360px;
+  height: 360px;
+}
+
+.sec2 .slides .ice{
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  color: #fff;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+.sec2 .icetext{
+  width: 350px;
+  margin: 30px 0 0 10px;
+  color: #505050;
+}
+
+.sec2 .icetext h3{
+  font-weight: bold;
+}
+
+.sec2 .icetext p{
+  font-size: 14px;
+  line-height:14px;
+}
+
+/* sce2_table */
+.sec2 .slides .sce2_table{
+  position: absolute;
+  top:0;right:0;bottom:0;left:0;
+  padding: 210px 0 0 40px;
+  color: #fff;
+  width: 360px;height: 360px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, .7);
+  opacity: 0;
+}
+
+.sec2 .sce2_table th,
+.sec2 .sce2_table td{
+  padding: 0 10px;
+}
+
+.sec2 .sce2_table{
+  width: 100%;
+}
+
+
+/* sec2controls */
+.sec2 .sec2prev, 
+.sec2 .sec2next{
+  font-size: 48px;
+  color: #505050;
+  box-sizing: border-box;
+  top:calc(50% - 70px)
+}
+
+.sec2 .sec2prev{
+  position: absolute;
+  left:0;
+}
+
+.sec2 .sec2next{
+  position: absolute;
+  right:0;
+}
+/* sec2 bestSlide_최성희(종료) */
+
+/* sec3 video_나서영(시작) */
+.sec3 {
+  height: 300px;
+  background: linear-gradient(#00724b 240px, #f2f2f2 240px);
+}
+
+.sec3 .thumb {
+  margin: 45px 0;
+}
+
+.sec3 .container {
+  position: relative;
+  cursor: pointer;
+}
+
+.sec3 .container > * {
+  float: left;
+}
+
+.sec3 .text_box {
+  padding: 60px 0;
+  box-sizing: border-box;
+  margin-left: 45px;
+}
+
+.sec3 .character {
+  position: absolute;
+  bottom: -50px;
+  right: 10px;
+}
+
+
+.sec3 .modal_wrap {
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.sec3 .modal_wrap.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sec3 .modal_wrap iframe {
+  width: 1000px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+/* sec3 video_나서영(종료) */
+
+
+/* sec4 promotion_천혜영(시작) */
+.sec4 .promotion h2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.sec4 .promotion div{
+  height: 690px;
+  width: 305px;
+  overflow:hidden;
+  margin:0 auto;
+  float: left;
+  transition: width 0.3s;
+}
+/* .promotion div[class^=event]:hover{
+  width: 635px;
+}  */
+.sec4 .promotion img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.sec4 .promotion div + div {
+  margin-left: 20px;
+}
+.max {
+  width: 635px;
+}
+.min {
+  width: 195px;
+}
+/* sec4 promotion_천혜영(종료) */
+
+
+/* sec5 store_최성희(시작) */
+.sec5 {
+  width: 1280px;
+  margin: 0 auto;
+  height: 750px;
+}
+
+.sec5 h2{
+  color: #1c1c1c;
+}
+
+.sec5 h2 span {
+  font-variant: small-caps;
+  font-size: 48px;
+  color: #99694b;
+}
+
+.sec5 h3 a{
+  color: #505050;
+}
+
+.sec5 .sec5_text{
+  margin-top: 70px;
+}
+
+.sec5 .sec5_text li{
+  position: relative;
+}
+
+.sec5 .sec5_text li > p{
+  line-height: 18px;
+  position: absolute;
+  bottom:60px; 
+}
+
+.sec5 .sec5_text li > h3 a{
+  transition: .3s;
+}
+
+.sec5 .sec5_text li > h3 a:hover{
+  color: #006f40;
+}
+
+.sec5 .sec5_text li h3{
+  margin-bottom: 90px;
+}
+
+.sec5 .sec5wrap{
+  width: 100%;
+  position: relative;
+}
+
+.sec5 .sec5_text{
+  position: absolute;
+}
+
+.sec5 img{
+  display:block;
+}
+
+.sec5 .sec5wrap #tab_content{
+  position: absolute;
+  right:0; 
+}
+
+.sec5 #tab_content div{
+  position: relative;
+  top:-20px;
+}
+
+.sec5 .sec5wrap div > p{
+  position:absolute;
+  right:510px;
+  top: 270px; 
+  width: 210px;
+  height: 210px;
+  overflow: hidden;
+}
+
+.sec5 .sec5wrap div > a{
+  position: absolute;
+  right:0;
+  width: 480px;
+  height: 480px;
+  overflow: hidden;
+}
+
+.sec5 .sec5wrap div > p img,
+.sec5 .sec5wrap div > a img{
+  transition: .3s;
+}
+
+.sec5 .sec5wrap div > p:hover img,
+.sec5 .sec5wrap div > a:hover img{
+  transform: scale(1.1);
+}
+
+.sec5 #tab_content{
+  transition: .3s;
+}
+
+/* 일단 안보이게 가랴기 */
+.sec5 #tab_content > div{
+  display: none;
+}
+
+/* sec5 store_최성희(종료) */
+
+
+/* sec6 brand_성진영(시작) */
+
+.sec6 .story{
+  width: 100%;
+  height: 690px;
+}
+.sec6 .Greener{
+  width: 50%;
+}
+.sec6 .Greener img{
+  width: 100%;
+  height: 180px;
+}
+.sec6 .Greener_list > div{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.sec6 .Greener img{
+  transition: 0.3s;
+}
+.sec6 .Greener img:hover{
+  transform: scale(1.05);
+}
+.sec6 .Greener h2{
+  margin-top: 30px;
+}
+.sec6 .Greener p{
+  width: 100%;
+  padding-top: 15px;
+}
+.sec6 .Greener em{
+  font-weight: bold;
+}
+/* .sec6 .ethical{
+  position: relative;
+} */
+.sec6 .ethical .ethical_list div{
+  position: absolute;
+  right: 0;
+  bottom: 90px;
+  overflow: hidden;
+  }
+.sec6 .ethical img{
+    transition: 0.3s;
+}
+.sec6 .ethical img:hover{
+  transform: scale(1.05);
+}
+.sec6 figcaption {
+  position: absolute;
+  transform: translate(290px, 100px);
+  font-weight: bold;
+  width: 630px;
+  left: 0;
+  right: 0;
+  top: 540px;
+  bottom: 0;
+}
+.sec6 figcaption p{
+  padding-top: 15px;
+}
+
+/* sec6 brand_성진영(종료) */
+
+
+/* sec7 notice_천혜영(시작) */
+.sec7.notice {
+  width: 100%;
+  height: 60px;
+  background: #b9aaa0;
+  line-height: 60px;
+  overflow: hidden;
+}
+.sec7 h2 {
+  font-weight: bold;
+  margin-right: 40px;
+  float: left;
+}
+.sec7 ul {
+  float: left;
+  position: relative;
+  transition: 0.5s;
+}
+.sec7 .notice_all {
+  font-weight: bold;
+  float: right;
+}
+.sec7 .container a:hover, .footer a:hover {
+  border-bottom: 1px solid;
+}
+/* sec7 notice_천혜영(종료) */
+
+/* footer,top button_천혜영(시작) */
+.footer {
+  width: 100%;
+  padding: 60px 0;
+  background: #272727;
+  text-align: center;
+}
+.footer li {
+  display: inline-block;
+}
+.footer .copyright li {
+  font-weight: bold;
+}
+.footer .copyright li+li:before{
+  content: '|';
+  margin: 0 20px;
+  font-weight: normal;
+  opacity: .5;
+}
+.footer .footer_menu li {
+  border: 1px solid;
+  border-radius: 3px;
+  width: 100px;
+  margin: 14px 5px;
+}
+.footer .address li, p {
+  margin: 0 10px;
+}
+/* top button */
+.top_button {
+  position: fixed;
+  right: calc(50% + -740px);
+  bottom: 420px;
+}
+.top_button .top_box {
+  position:relative;
+  height: 27px;
+}
+.top_button .top_arrow {
+  position: absolute;
+  color: #4f2b1c;
+  font-size: 24px;
+  left: calc(50% - 10.5px);
+  bottom: -2px;
+  opacity: .5;
+  animation: to_top 1.5s infinite;
+}
+@keyframes to_top {
+  from {transform: translateY(2px); opacity: 1;}
+  100% {transform: translateY(-5px); opacity: .5;}
+}
+
+/* footer,top button_천혜영(종료) */
