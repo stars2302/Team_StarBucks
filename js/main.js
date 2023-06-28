@@ -1,3 +1,4 @@
+/* header_성진영(시작) */
 let headerz = document.querySelector('.bottom_menu'),
 menu = document.querySelectorAll('.bottom_menu .menu_list li'),
 submenu = document.querySelectorAll('.bottom_menu .menu_list dl'),
@@ -29,6 +30,8 @@ window.addEventListener('scroll',()=>{
       headerz.classList.remove('sticky');
   }
 });
+/* header_성진영(종료) */
+
 
 /* header modal_나서영(시작) */
 let modal_loginForm = document.querySelector('header .modal_wrap .login_form');
@@ -71,7 +74,10 @@ modal_loginForm.addEventListener('submit',(e)=>{
     modal_loginForm.querySelector('h2').style.lineHeight = '240px'
   }
 });
+/* header modal_나서영(종료) */
 
+
+/* sec1 main_나서영(종료) */
 let sec1_smallItem = document.querySelectorAll('.sec1 .items li ');
 let sec1_bigItem = document.querySelector('.sec1 .big_item');
 let sec1_bigItemImg = sec1_bigItem.querySelector('img');
@@ -103,3 +109,41 @@ function changeImg(target,index){
     target.classList.remove('active');
   },800);
 }
+/* sec1 main_나서영(종료) */  
+
+
+/* sec2 bestSlide_최성희(시작) */  
+let slideWrapper = document.querySelector('.sec2slide_wrap'),
+    slideContainer = slideWrapper.querySelector('.slides'),
+    slides = slideContainer.querySelectorAll('.slides li'),
+    slideCount = slides.length,
+    slidePerView = 3,
+    slideWith = 360,
+    slideMargin = 30,
+    currentSlideIdx = 0;
+    prevBtn = document.querySelector('.sec2prev'),
+    nextBtn = document.querySelector('.sec2next');
+
+    slides.forEach((slide,idx)=>{
+      slide.style.left = `${idx*(slideWith+slideMargin)}px`
+    })
+
+    //슬라이드 이동함수
+    function moveSlide(num){
+      slideContainer.style.left = `${-num*(slideWith+slideMargin)}px`;
+      currentSlideIdx = num;
+    }
+    moveSlide(0);//한번 움직인다
+    //버튼 클릭하면 움직이기
+    nextBtn.addEventListener('click',()=>{
+      if(currentSlideIdx < slideCount-slidePerView){
+        moveSlide(currentSlideIdx + 3);
+      }
+    });
+
+    prevBtn.addEventListener('click',()=>{
+      if(currentSlideIdx > 0){
+        moveSlide(currentSlideIdx - 3);
+      }
+    });
+/* sec2 bestSlide_최성희(종료) */
