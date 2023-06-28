@@ -699,7 +699,8 @@ header .modal_wrap .inner_form .feedback {
   width: 100px;
   margin: 14px 5px;
 }
-.footer .address li, p {
+.footer .address li,
+.footer .address p {
   margin: 0 10px;
 }
 /* top button */
