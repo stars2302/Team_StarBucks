@@ -195,7 +195,6 @@ header .modal_wrap .inner_form .feedback {
 /* header modal_나서영(종료) */
 /* sec1 main_나서영(시작) */
 .sec1 {
-  margin-top: 210px;/* 임시. body padding-top으로 변경하자! */
   height: 750px;
   background: url('../img/sec1_bg.png') no-repeat center/cover;
 }
