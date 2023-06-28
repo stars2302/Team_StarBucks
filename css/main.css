@@ -85,7 +85,7 @@ header .bottom_menu dt a:hover{
 
 
 /* header modal_나서영(시작) */
-.modal_wrap {
+header .modal_wrap {
   display: none;
 }
 
@@ -429,7 +429,6 @@ header .modal_wrap .inner_form .feedback {
 
 .sec3 .modal_wrap iframe {
   width: 1000px;
-  height: 590px;
   position: absolute;
   left: 50%;
   top: 50%;

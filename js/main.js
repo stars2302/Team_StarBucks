@@ -135,13 +135,15 @@ let slideWrapper = document.querySelector('.sec2slide_wrap'),
     }
     moveSlide(0);//한번 움직인다
     //버튼 클릭하면 움직이기
-    nextBtn.addEventListener('click',()=>{
+    nextBtn.addEventListener('click',(e)=>{
+      e.preventDefault();
       if(currentSlideIdx < slideCount-slidePerView){
         moveSlide(currentSlideIdx + 3);
       }
     });
 
-    prevBtn.addEventListener('click',()=>{
+    prevBtn.addEventListener('click',(e)=>{
+      e.preventDefault();
       if(currentSlideIdx > 0){
         moveSlide(currentSlideIdx - 3);
       }
