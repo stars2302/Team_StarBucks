@@ -3,36 +3,36 @@ header{
   background:#fff;
   height: 210px;
 }
-.fw{
+header .fw{
   font-weight:normal;
 }
-.top_menu{
+header .top_menu{
   position: relative;
   height: 150px;
   padding-top: 30px;
   box-sizing: border-box;
 }
-.top_menu h1{
+header .top_menu h1{
   float: left;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
-.left{
+header .left{
   float: left;
 }
-.left ul li{
+header .left ul li{
   float: left;
   margin-left: 30px;
 }
-.right.icon_L{
+header .right.icon_L{
   float: right;
 }
-.right.icon_L ul li{
+header .right.icon_L ul li{
   float: right;
   margin-right: 30px;
 }
-.top_menu h1 a{
+header .top_menu h1 a{
   width: 90px;
   height: 90px;
   background: url(../img/h1_Logo.png)no-repeat;
@@ -40,7 +40,7 @@ header{
   display: block;
   margin: 0 auto;
 }
-.bottom_menu{
+header .bottom_menu{
   width: 100%;
   background:linear-gradient( #fff 60px,rgba(255,255,255,.9) 60px);
   transition: 0.2s;  
@@ -48,15 +48,15 @@ header{
   height: 60px;
   position: absolute;
 }
-.bottom_menu .bottom_list{
+header .bottom_menu .bottom_list{
   height: 61px;
   border-bottom: 1px #006f40 solid;
 }
-.bottom_menu.sticky{
+header .bottom_menu.sticky{
   position: fixed;
   top:0;
 }
-.bottom_menu .menu_list li{
+header .bottom_menu .menu_list li{
   width: 20%;
   float: left;
   position: relative;
@@ -64,20 +64,20 @@ header{
   line-height: 60px;
   text-align: center;
 }
-.bottom_menu .menu_list li a{
+header .bottom_menu .menu_list li a{
   display: inline-block;
 }
-.bottom_menu dt:last-child{
+header .bottom_menu dt:last-child{
   margin-bottom: 40px;
 }
-.bottom_menu .menu_list li dl{
+header .bottom_menu .menu_list li dl{
   position: absolute;
   padding-top: 30px;
   width: 100%;
   text-align: left;
   padding-left: 100px;
 }
-.bottom_menu dt a:hover{
+header .bottom_menu dt a:hover{
   /* border-bottom: 1px solid; */
   color: #006f40;
 }
