@@ -542,12 +542,10 @@ header .modal_wrap .inner_form .feedback {
   top:-20px;
 }
 
-.sec5 .sec5wrap div > p{
+.sec5 .sec5wrap div > img{
   position:absolute;
   right:510px;
   top: 270px; 
-  width: 210px;
-  height: 210px;
   overflow: hidden;
 }
 
@@ -559,12 +557,10 @@ header .modal_wrap .inner_form .feedback {
   overflow: hidden;
 }
 
-.sec5 .sec5wrap div > p img,
 .sec5 .sec5wrap div > a img{
   transition: .3s;
 }
 
-.sec5 .sec5wrap div > p:hover img,
 .sec5 .sec5wrap div > a:hover img{
   transform: scale(1.1);
 }
