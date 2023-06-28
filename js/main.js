@@ -5,28 +5,32 @@ headerHeight = headerz.offsetHeight;
 let submenuHeight = 0;
 
 submenu.forEach(item=>{
-if(item.offsetHeight > submenuHeight){
-    submenuHeight = item.offsetHeight;
-}
+  if(item.offsetHeight > submenuHeight){
+      submenuHeight = item.offsetHeight;
+  }
 });
+
 console.log(submenuHeight);
 let headerzTotal = `${headerHeight + submenuHeight}px`;
 
 menu.forEach(tem=>{
-tem.addEventListener('mouseover',()=>{
-    headerz.style.height = headerzTotal;
-});
-tem.addEventListener('mouseout',()=>{
-    headerz.style.height = `${headerHeight}px`;
-});	
+  tem.addEventListener('mouseover',()=>{
+      headerz.style.height = headerzTotal;
+  });
+  tem.addEventListener('mouseout',()=>{
+      headerz.style.height = `${headerHeight}px`;
+  });	
 });
 
 window.addEventListener('scroll',()=>{
-if(window.scrollY > headerHeight){
-    headerz.classList.add('sticky');
-}else{
-    headerz.classList.remove('sticky');
-}
+  if(window.scrollY > headerHeight){
+      headerz.classList.add('sticky');
+  }else{
+      headerz.classList.remove('sticky');
+  }
+});
+
+/* header modal_나서영(시작) */
 let modal_loginForm = document.querySelector('header .modal_wrap .login_form');
 let modal_loginInput = modal_loginForm.querySelectorAll('.field input');
 let modal_loginFeedback = modal_loginForm.querySelector('.login_func .feedback');
@@ -67,3 +71,4 @@ modal_loginForm.addEventListener('submit',(e)=>{
     modal_loginForm.querySelector('h2').style.lineHeight = '240px'
   }
 });
+
