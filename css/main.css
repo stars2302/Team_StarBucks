@@ -3,6 +3,8 @@
 header{
   background:#fff;
   height: 210px;
+  z-index: 9999;
+  position: relative;
 }
 header .fw{
   font-weight:normal;
@@ -30,7 +32,7 @@ header .right.icon_L{
   float: right;
 }
 header .right.icon_L ul li{
-  float: right;
+  float: left;
   margin-right: 30px;
 }
 header .top_menu h1 a{
@@ -302,13 +304,11 @@ header .modal_wrap .inner_form .feedback {
   position: absolute;
 }
 
-.sec2 .slides li .sec2img{
-  width: 360px;
-  overflow: hidden;
+.sec2 .slides li .sec2img .sce2_table{
+  transition: .3s;
 }
 
 .sec2 .slides li .sec2img:hover .sce2_table{
-  transition: .3s ;
   opacity: 1;
 }
 
@@ -513,9 +513,12 @@ header .modal_wrap .inner_form .feedback {
 .sec5 .sec5_text li > h3 a{
   transition: .3s;
 }
-
+.sec5 .sec5_text li > h3 a.active{
+  color: #006f40;
+}
 .sec5 .sec5_text li > h3 a:hover{
   color: #006f40;
+  opacity: .8;
 }
 
 .sec5 .sec5_text li h3{
@@ -545,12 +548,10 @@ header .modal_wrap .inner_form .feedback {
   top:-20px;
 }
 
-.sec5 .sec5wrap div > p{
+.sec5 .sec5wrap div > img{
   position:absolute;
   right:510px;
   top: 270px; 
-  width: 210px;
-  height: 210px;
   overflow: hidden;
 }
 
@@ -562,14 +563,13 @@ header .modal_wrap .inner_form .feedback {
   overflow: hidden;
 }
 
-.sec5 .sec5wrap div > p img,
 .sec5 .sec5wrap div > a img{
   transition: .3s;
 }
 
-.sec5 .sec5wrap div > p:hover img,
 .sec5 .sec5wrap div > a:hover img{
-  transform: scale(1.1);
+  transform: scale(1.01);
+  opacity: .9;
 }
 
 .sec5 #tab_content{
@@ -710,7 +710,7 @@ header .modal_wrap .inner_form .feedback {
 .top_button {
   position: fixed;
   right: calc(50% + -740px);
-  bottom: 50px;
+  bottom: 100px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s;

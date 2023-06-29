@@ -1,8 +1,17 @@
+//a태그 클릭 방지
+let aTag = document.getElementsByTagName('a');
+for(let a of aTag){
+  a.addEventListener('click',(e)=>{
+    e.preventDefault();
+  });
+}
+
 /* header_성진영(시작) */
 let headerz = document.querySelector('.bottom_menu'),
 menu = document.querySelectorAll('.bottom_menu .menu_list li'),
 submenu = document.querySelectorAll('.bottom_menu .menu_list dl'),
 headerHeight = headerz.offsetHeight;
+let bottomOST = headerz.offsetTop;
 let submenuHeight = 0;
 
 submenu.forEach(item=>{
@@ -24,7 +33,7 @@ menu.forEach(tem=>{
 });
 
 window.addEventListener('scroll',()=>{
-  if(window.scrollY > headerHeight){
+  if(window.scrollY > bottomOST){
       headerz.classList.add('sticky');
   }else{
       headerz.classList.remove('sticky');
@@ -39,9 +48,8 @@ let modal_loginInput = modal_loginForm.querySelectorAll('.field input');
 let modal_loginFeedback = modal_loginForm.querySelector('.login_func .feedback');
 
 //로그인 폼에 전송이벤트가 일어나면
-modal_loginForm.addEventListener('submit',(e)=>{
+modal_loginForm.addEventListener('submit',()=>{
   //전송기능을 막고
-  e.preventDefault();
   console.log(e);
 
 
@@ -135,15 +143,13 @@ let slideWrapper = document.querySelector('.sec2slide_wrap'),
     }
     moveSlide(0);//한번 움직인다
     //버튼 클릭하면 움직이기
-    nextBtn.addEventListener('click',(e)=>{
-      e.preventDefault();
+    nextBtn.addEventListener('click',()=>{
       if(currentSlideIdx < slideCount-slidePerView){
         moveSlide(currentSlideIdx + 3);
       }
     });
 
-    prevBtn.addEventListener('click',(e)=>{
-      e.preventDefault();
+    prevBtn.addEventListener('click',()=>{
       if(currentSlideIdx > 0){
         moveSlide(currentSlideIdx - 3);
       }
@@ -156,15 +162,13 @@ let sec3_modal = document.querySelector('.sec3 .modal_wrap');
 
 
 //sec3 banner클릭하면 modal의 visible클래스를 추가하여 나타나기
-sec3_banner.addEventListener('click',(e)=>{
-  e.preventDefault();
+sec3_banner.addEventListener('click',()=>{
   sec3_modal.classList.add('visible');
 });
 
 
 //modal 아무곳이나 클릭하면 visible클래스를 제거하여 숨기기
-sec3_modal.addEventListener('click',(e)=>{
-  e.preventDefault();
+sec3_modal.addEventListener('click',()=>{
   sec3_modal.classList.remove('visible');
 });
 /* sec3 video_나서영(종료) */
@@ -173,25 +177,26 @@ sec3_modal.addEventListener('click',(e)=>{
 /* sec4 promotion_천혜영(종료) */
 
 /* sec5 store_최성희(시작) */  
-let targetLink =document.querySelectorAll('.sec5 .tab_menu a');
+let targetLink = document.querySelectorAll('.sec5 .tab_menu a');
 let tabContent = document.querySelectorAll('.sec5 #tab_content > div');
-//a태그들마다 클릭하면 할 일
 for(let i = 0; i <targetLink.length; i++){
-
-  targetLink[i].addEventListener('click',(e)=>{
-    e.preventDefault();//링크 안먹게
+  targetLink[i].addEventListener('click',(e)=>{//a태그들마다 클릭하면 할 일
     let orgTarget = e.target.getAttribute('href');
-
-    let tabTarget = orgTarget.replace('#','');
+    let tabTarget = orgTarget.replace('#','');//#있는거를 없앰
 
     for(let x = 0; x < tabContent.length ; x++){
-      tabContent[x].style.display = 'none';
+      tabContent[x].style.display = 'none';//div 다 안보이게
     }
 
-    document.getElementById(tabTarget).style.display = "block";
+    document.getElementById(tabTarget).style.display = "block";//클릭하면보임
+    
+    for( let j = 0; j<targetLink.length; j++){
+      targetLink[j].classList.remove('active');//클래스명삭제
+      e.target.classList.add('active');//추가
+    }
   }); 
 }
-document.getElementById('tabs1').style.display = "block";
+document.getElementById('tabs1').style.display = "block";//열자마자 첫번째만 보이게
 /* sec5 store_최성희(종료) */
 
 
@@ -263,13 +268,11 @@ window.addEventListener('scroll',()=>{
   }
 });
 
-topBtn.addEventListener('click',(e)=>{
-  e.preventDefault();
+topBtn.addEventListener('click',()=>{
   window.scrollTo({
     left:0,
     top:0,
     behavior:'smooth'
   });
-
 });
 /* top button_천혜영(종료) */
