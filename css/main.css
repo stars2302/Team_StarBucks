@@ -458,6 +458,11 @@ header .modal_wrap .inner_form .feedback {
 /* .promotion div[class^=event]:hover{
   width: 635px;
 }  */
+.sec4 .promotion div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .sec4 .promotion img{
   width:100%;
   height:100%;
