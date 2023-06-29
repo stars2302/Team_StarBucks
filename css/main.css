@@ -707,8 +707,7 @@ header .modal_wrap .inner_form .feedback {
 .top_button {
   position: fixed;
   right: calc(50% + -740px);
-  bottom: 420px;
-  /* bottom: 50px; */
+  bottom: 50px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s;
