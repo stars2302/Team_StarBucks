@@ -1,4 +1,4 @@
-/* header_성진영(시작) */
+/* sec6 brand_성진영(시작) */
 
 .sec6 .story{
   width: 100%;
@@ -11,16 +11,18 @@
   width: 100%;
   height: 180px;
 }
-.Greener_list > div{
+.sec6 .Greener_list > div{
   overflow: hidden;
   width: 100%;
   height: 100%;
 }
 .sec6 .Greener img{
   transition: 0.3s;
+  filter: grayscale(.5);
 }
 .sec6 .Greener img:hover{
-  transform: scale(1.05);
+  transform: scale(1.1) rotate(2deg);
+  filter: grayscale(0);
 }
 .sec6 .Greener h2{
   margin-top: 30px;
@@ -32,10 +34,10 @@
 .sec6 .Greener em{
   font-weight: bold;
 }
-.se6 .ethical{
+/* .sec6 .ethical{
   position: relative;
-}
-.ethical .ethical_list div{
+} */
+.sec6 .ethical .ethical_list div{
   position: absolute;
   right: 0;
   bottom: 90px;
@@ -43,9 +45,11 @@
   }
 .sec6 .ethical img{
     transition: 0.3s;
+    filter: grayscale(.5);
 }
-.ethical img:hover{
-  transform: scale(1.05);
+.sec6 .ethical img:hover{
+  transform: scale(1.1) rotate(2deg);
+  filter: grayscale(0);
 }
 .sec6 figcaption {
   position: absolute;
@@ -61,4 +65,4 @@
   padding-top: 15px;
 }
 
-/* header_성진영(종료) */
+/* sec6 brand_성진영(종료) */
