@@ -81,7 +81,9 @@ header .bottom_menu .menu_list li{
   text-align: center;
 }
 header .bottom_menu .menu_list li a{
-  display: inline-block;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
 }
 header .bottom_menu dt:last-child{
   margin-bottom: 40px;
