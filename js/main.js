@@ -13,11 +13,12 @@ submenu.forEach(item=>{
 });
 
 console.log(submenuHeight);
-let headerzTotal = `${headerHeight + submenuHeight}px`;
+let headerzTotal = `${headerHeight + submenuHeight + 45}px`;
 
 menu.forEach(tem=>{
   tem.addEventListener('mouseover',()=>{
       headerz.style.height = headerzTotal;
+      // headerz.style.paddingBottom = '45px';
   });
   tem.addEventListener('mouseout',()=>{
       headerz.style.height = `${headerHeight}px`;
