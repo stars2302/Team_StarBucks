@@ -44,10 +44,11 @@ header .right a:hover{
   transition: 0.3s;
 }
 header .center_logo{
+  /* width: 100%;
+  height: 100%; */
+  margin: 0 auto;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  margin: 0 auto;
 }
 header .top_menu h1 a{
   background: url(../img/header_h1_Logo.png)no-repeat;
@@ -77,27 +78,24 @@ header .bottom_menu .menu_list li{
   float: left;
   position: relative;
   font-weight: bold;
-  line-height: 60px;
+  line-height: 65px;
   text-align: center;
+  display: block;
 }
 header .bottom_menu .menu_list li a{
-  display: block;
   width: 70%;
   margin: 0 auto;
-}
-header .bottom_menu dt:last-child{
-  margin-bottom: 40px;
 }
 header .bottom_menu .menu_list li dl{
   position: absolute;
   padding-top: 30px;
   width: 100%;
   text-align: left;
-  padding-left: 100px;
+  padding-left:100px;
+  box-sizing: border-box;
 }
 header .bottom_menu dt a:hover,
 header .bottom_menu dd a:hover{
-  border-bottom: 1px solid;
   color: #006f40;
 }
 /* header_성진영(종료) */
