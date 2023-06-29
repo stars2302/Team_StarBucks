@@ -438,7 +438,6 @@ header .modal_wrap .inner_form .feedback {
 
 
 /* sec4 promotion_천혜영(시작) */
-
 /* 기본 4등분 : 1280 - (20+20+20) = 1220 / 4 = 305 */
 /* hover : 1280 - (20+20+20) = 1220 [635/195/195/195] */
 .sec4 .promotion h2 {
@@ -454,6 +453,7 @@ header .modal_wrap .inner_form .feedback {
   /* margin:0 auto; */
   float: left;
   transition: width 0.3s;
+  position: relative;
 }
 .promotion.active div:hover{
   width: 635px;
@@ -461,9 +461,12 @@ header .modal_wrap .inner_form .feedback {
 .promotion.active div:not(:hover){
   width: 195px;
 }
-/* .promotion.active div:not(:hover):after {
+.promotion.active div:not(:hover):after {
   content: '';
-} */
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+}
 .sec4 .promotion div a {
   display: block;
   width: 100%;

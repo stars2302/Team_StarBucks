@@ -176,8 +176,15 @@ sec3_modal.addEventListener('click',()=>{
 /* sec4 promotion_천혜영(시작) */
 let sec4_promotion = document.querySelector('.sec4 .promotion'),
     sec4_event = sec4_promotion.querySelectorAll('div[class^=event]');
-    console.log(sec4_promotion);
 
+sec4_event.forEach(item=>{
+  item.addEventListener('mouseenter',()=>{
+    sec4_promotion.classList.add('active');
+  });
+  item.addEventListener('mouseleave',()=>{
+    sec4_promotion.classList.remove('active');
+  });
+})
 /* sec4 promotion_천혜영(종료) */
 
 /* sec5 store_최성희(시작) */  
