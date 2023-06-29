@@ -249,3 +249,27 @@ function sec7_auto(){
 sec7_auto();
 
 /* sec7 notice_천혜영(종료) */
+
+/* top button_천혜영(시작) */
+let topBtn = document.querySelector('.top_button'),
+    topScroll = 0;
+
+window.addEventListener('scroll',()=>{
+  topScroll = window.scrollY; 
+  if(topScroll > 800){
+    topBtn.classList.add('active');
+  } else{
+    topBtn.classList.remove('active');
+  }
+});
+
+topBtn.addEventListener('click',(e)=>{
+  e.preventDefault();
+  window.scrollTo({
+    left:0,
+    top:0,
+    behavior:'smooth'
+  });
+
+});
+/* top button_천혜영(종료) */
