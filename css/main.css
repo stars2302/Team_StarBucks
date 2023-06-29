@@ -669,7 +669,7 @@ header .modal_wrap .inner_form .feedback {
   font-weight: bold;
   float: right;
 }
-.sec7 .container a:hover, .footer a:hover {
+.sec7 .container a:hover, .footer .copyright a:hover {
   border-bottom: 1px solid;
 }
 /* sec7 notice_천혜영(종료) */
@@ -693,12 +693,21 @@ header .modal_wrap .inner_form .feedback {
   font-weight: normal;
   opacity: .5;
 }
+.footer .footer_menu a {
+  display: block;
+}
 .footer .footer_menu li {
   border: 1px solid;
   border-radius: 3px;
   width: 100px;
   margin: 14px 5px;
 }
+/* .footer .footer_menu li:hover {
+  background: rgba(255,255,255,.5);
+  color: #272727;
+  border-color: #fff;
+} */
+
 .footer .address li,
 .footer .address p {
   margin: 0 10px;
