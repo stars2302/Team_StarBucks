@@ -302,13 +302,11 @@ header .modal_wrap .inner_form .feedback {
   position: absolute;
 }
 
-.sec2 .slides li .sec2img{
-  width: 360px;
-  overflow: hidden;
+.sec2 .slides li .sec2img .sce2_table{
+  transition: .3s;
 }
 
 .sec2 .slides li .sec2img:hover .sce2_table{
-  transition: .3s ;
   opacity: 1;
 }
 
