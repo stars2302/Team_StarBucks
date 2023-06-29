@@ -597,67 +597,75 @@ header .modal_wrap .inner_form .feedback {
 
 /* sec6 brand_성진영(시작) */
 
-.sec6 .story{
-  width: 100%;
-  height: 690px;
+.sec6{
+  height: 780px;
+  position: relative;
+  margin-bottom: 90px;
 }
 .sec6 .Greener{
   width: 50%;
+  left: 0;
+  top: 0;
 }
 .sec6 .Greener img{
   width: 100%;
   height: 180px;
 }
-.sec6 .Greener_list > div{
+.sec6 .Greener > .edge{
   overflow: hidden;
   width: 100%;
   height: 100%;
 }
 .sec6 .Greener img{
-  transition: 0.3s;
+  filter: grayscale(.5);
+  transition: .5s;
 }
 .sec6 .Greener img:hover{
-  transform: scale(1.05);
+  transform: scale(1.05) rotate(1deg);
+  filter: grayscale(0);
 }
 .sec6 .Greener h2{
   margin-top: 30px;
 }
-.sec6 .Greener p{
+.sec6 .Greener .Greener_story p{
   width: 100%;
   padding-top: 15px;
 }
 .sec6 .Greener em{
   font-weight: bold;
 }
-/* .sec6 .ethical{
-  position: relative;
-} */
-.sec6 .ethical .ethical_list div{
+
+.sec6 .ethical {
+  width: 100%;
+  height: 480px;
   position: absolute;
   right: 0;
-  bottom: 90px;
-  overflow: hidden;
+  bottom: 0;
   }
+.sec6 .ethical > .edge{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  filter: grayscale(.5);
+}
 .sec6 .ethical img{
-    transition: 0.3s;
+  filter: grayscale(.5);
+  transition: .5s;
 }
 .sec6 .ethical img:hover{
-  transform: scale(1.05);
+  transform: scale(1.08) rotate(2deg);
+  filter: grayscale(0);
 }
-.sec6 figcaption {
+.sec6 .ethical .ethical_story{
   position: absolute;
-  transform: translate(290px, 100px);
-  font-weight: bold;
-  width: 630px;
-  left: 0;
-  right: 0;
-  top: 540px;
+  left: 280px;
   bottom: 0;
 }
-.sec6 figcaption p{
+.sec6 .ethical .ethical_story p{
   padding-top: 15px;
+  font-weight: bold;
 }
-
 /* sec6 brand_성진영(종료) */
 
 
