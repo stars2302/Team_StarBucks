@@ -237,6 +237,8 @@ header .modal_wrap .inner_form .feedback {
   font-weight: bold;
   opacity: 0;
   transition: .3s;
+  color: #505050;
+  word-break: keep-all;
 }
 
 .sec1 .items li:hover h3 {
