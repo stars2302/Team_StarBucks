@@ -3,6 +3,8 @@
 header{
   background:#fff;
   height: 210px;
+  z-index: 9999;
+  position: relative;
 }
 header .fw{
   font-weight:normal;
@@ -30,7 +32,7 @@ header .right.icon_L{
   float: right;
 }
 header .right.icon_L ul li{
-  float: right;
+  float: left;
   margin-right: 30px;
 }
 header .top_menu h1 a{

@@ -3,6 +3,7 @@ let headerz = document.querySelector('.bottom_menu'),
 menu = document.querySelectorAll('.bottom_menu .menu_list li'),
 submenu = document.querySelectorAll('.bottom_menu .menu_list dl'),
 headerHeight = headerz.offsetHeight;
+let bottomOST = headerz.offsetTop;
 let submenuHeight = 0;
 
 submenu.forEach(item=>{
@@ -24,7 +25,7 @@ menu.forEach(tem=>{
 });
 
 window.addEventListener('scroll',()=>{
-  if(window.scrollY > headerHeight){
+  if(window.scrollY > bottomOST){
       headerz.classList.add('sticky');
   }else{
       headerz.classList.remove('sticky');
