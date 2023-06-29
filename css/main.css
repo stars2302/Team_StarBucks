@@ -438,7 +438,7 @@ header .modal_wrap .inner_form .feedback {
 
 
 /* sec4 promotion_천혜영(시작) */
-/* 1280 / 100(%) = 12.8 → XX 균등한 4분할은 margin 20px 때문에 힘듦.. */
+
 /* 기본 4등분 : 1280 - (20+20+20) = 1220 / 4 = 305 */
 /* hover : 1280 - (20+20+20) = 1220 [635/195/195/195] */
 .sec4 .promotion h2 {
@@ -450,14 +450,20 @@ header .modal_wrap .inner_form .feedback {
 .sec4 .promotion div{
   height: 690px;
   width: 305px;
-  overflow:hidden;
-  margin:0 auto;
+  /* overflow:hidden; */
+  /* margin:0 auto; */
   float: left;
   transition: width 0.3s;
 }
-/* .promotion div[class^=event]:hover{
+.promotion.active div:hover{
   width: 635px;
-}  */
+} 
+.promotion.active div:not(:hover){
+  width: 195px;
+}
+/* .promotion.active div:not(:hover):after {
+  content: '';
+} */
 .sec4 .promotion div a {
   display: block;
   width: 100%;
@@ -470,12 +476,6 @@ header .modal_wrap .inner_form .feedback {
 }
 .sec4 .promotion div + div {
   margin-left: 20px;
-}
-.max {
-  width: 635px;
-}
-.min {
-  width: 195px;
 }
 /* sec4 promotion_천혜영(종료) */
 
