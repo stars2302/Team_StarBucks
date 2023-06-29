@@ -510,9 +510,12 @@ header .modal_wrap .inner_form .feedback {
 .sec5 .sec5_text li > h3 a{
   transition: .3s;
 }
-
+.sec5 .sec5_text li > h3 a.active{
+  color: #006f40;
+}
 .sec5 .sec5_text li > h3 a:hover{
   color: #006f40;
+  opacity: .8;
 }
 
 .sec5 .sec5_text li h3{
@@ -542,12 +545,10 @@ header .modal_wrap .inner_form .feedback {
   top:-20px;
 }
 
-.sec5 .sec5wrap div > p{
+.sec5 .sec5wrap div > img{
   position:absolute;
   right:510px;
   top: 270px; 
-  width: 210px;
-  height: 210px;
   overflow: hidden;
 }
 
@@ -559,14 +560,13 @@ header .modal_wrap .inner_form .feedback {
   overflow: hidden;
 }
 
-.sec5 .sec5wrap div > p img,
 .sec5 .sec5wrap div > a img{
   transition: .3s;
 }
 
-.sec5 .sec5wrap div > p:hover img,
 .sec5 .sec5wrap div > a:hover img{
-  transform: scale(1.1);
+  transform: scale(1.01);
+  opacity: .9;
 }
 
 .sec5 #tab_content{
