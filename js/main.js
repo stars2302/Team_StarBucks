@@ -3,6 +3,7 @@ let headerz = document.querySelector('.bottom_menu'),
 menu = document.querySelectorAll('.bottom_menu .menu_list li'),
 submenu = document.querySelectorAll('.bottom_menu .menu_list dl'),
 headerHeight = headerz.offsetHeight;
+let bottomOST = headerz.offsetTop;
 let submenuHeight = 0;
 
 submenu.forEach(item=>{
@@ -12,11 +13,12 @@ submenu.forEach(item=>{
 });
 
 console.log(submenuHeight);
-let headerzTotal = `${headerHeight + submenuHeight}px`;
+let headerzTotal = `${headerHeight + submenuHeight + 45}px`;
 
 menu.forEach(tem=>{
   tem.addEventListener('mouseover',()=>{
       headerz.style.height = headerzTotal;
+      // headerz.style.paddingBottom = '45px';
   });
   tem.addEventListener('mouseout',()=>{
       headerz.style.height = `${headerHeight}px`;
@@ -24,7 +26,7 @@ menu.forEach(tem=>{
 });
 
 window.addEventListener('scroll',()=>{
-  if(window.scrollY > headerHeight){
+  if(window.scrollY > bottomOST){
       headerz.classList.add('sticky');
   }else{
       headerz.classList.remove('sticky');
@@ -173,25 +175,27 @@ sec3_modal.addEventListener('click',(e)=>{
 /* sec4 promotion_천혜영(종료) */
 
 /* sec5 store_최성희(시작) */  
-let targetLink =document.querySelectorAll('.sec5 .tab_menu a');
+let targetLink = document.querySelectorAll('.sec5 .tab_menu a');
 let tabContent = document.querySelectorAll('.sec5 #tab_content > div');
-//a태그들마다 클릭하면 할 일
 for(let i = 0; i <targetLink.length; i++){
-
-  targetLink[i].addEventListener('click',(e)=>{
-    e.preventDefault();//링크 안먹게
+  targetLink[i].addEventListener('click',(e)=>{//a태그들마다 클릭하면 할 일
+    e.preventDefault();//링크 안먹게 기본 속성 막기
     let orgTarget = e.target.getAttribute('href');
-
-    let tabTarget = orgTarget.replace('#','');
+    let tabTarget = orgTarget.replace('#','');//#있는거를 없앰
 
     for(let x = 0; x < tabContent.length ; x++){
-      tabContent[x].style.display = 'none';
+      tabContent[x].style.display = 'none';//div 다 안보이게
     }
 
-    document.getElementById(tabTarget).style.display = "block";
+    document.getElementById(tabTarget).style.display = "block";//클릭하면보임
+    
+    for( let j = 0; j<targetLink.length; j++){
+      targetLink[j].classList.remove('active');//클래스명삭제
+      e.target.classList.add('active');//추가
+    }
   }); 
 }
-document.getElementById('tabs1').style.display = "block";
+document.getElementById('tabs1').style.display = "block";//열자마자 첫번째만 보이게
 /* sec5 store_최성희(종료) */
 
 
@@ -249,3 +253,27 @@ function sec7_auto(){
 sec7_auto();
 
 /* sec7 notice_천혜영(종료) */
+
+/* top button_천혜영(시작) */
+let topBtn = document.querySelector('.top_button'),
+    topScroll = 0;
+
+window.addEventListener('scroll',()=>{
+  topScroll = window.scrollY; 
+  if(topScroll > 800){
+    topBtn.classList.add('active');
+  } else{
+    topBtn.classList.remove('active');
+  }
+});
+
+topBtn.addEventListener('click',(e)=>{
+  e.preventDefault();
+  window.scrollTo({
+    left:0,
+    top:0,
+    behavior:'smooth'
+  });
+
+});
+/* top button_천혜영(종료) */

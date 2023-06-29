@@ -3,6 +3,8 @@
 header{
   background:#fff;
   height: 210px;
+  z-index: 9999;
+  position: relative;
 }
 header .fw{
   font-weight:normal;
@@ -15,31 +17,45 @@ header .top_menu{
 }
 header .top_menu h1{
   float: left;
-  position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 header .left{
   float: left;
 }
-header .left ul li{
+header .left li{
   float: left;
-  margin-left: 30px;
+  margin-right: 30px;
 }
 header .right.icon_L{
   float: right;
 }
-header .right.icon_L ul li{
-  float: right;
-  margin-right: 30px;
+header .right.icon_L li{
+  float: left;
+  margin-left: 30px;
+}
+header .left a:hover,
+header .right a:hover{
+  color: #006f40;
+  transition: 0.3s;
+}
+.youtube:hover{
+  background-color: #006f40;
+  transition: 0.3s;
+}
+header .center_logo{
+  /* width: 100%;
+  height: 100%; */
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
 }
 header .top_menu h1 a{
-  width: 90px;
-  height: 90px;
   background: url(../img/header_h1_Logo.png)no-repeat;
   text-indent: -1000em;
   display: block;
-  margin: 0 auto;
+  width: 90px;
+  height: 90px;
 }
 header .bottom_menu{
   width: 100%;
@@ -62,24 +78,24 @@ header .bottom_menu .menu_list li{
   float: left;
   position: relative;
   font-weight: bold;
-  line-height: 60px;
+  line-height: 65px;
   text-align: center;
+  display: block;
 }
 header .bottom_menu .menu_list li a{
-  display: inline-block;
-}
-header .bottom_menu dt:last-child{
-  margin-bottom: 40px;
+  width: 70%;
+  margin: 0 auto;
 }
 header .bottom_menu .menu_list li dl{
   position: absolute;
   padding-top: 30px;
   width: 100%;
   text-align: left;
-  padding-left: 100px;
+  padding-left:100px;
+  box-sizing: border-box;
 }
-header .bottom_menu dt a:hover{
-  /* border-bottom: 1px solid; */
+header .bottom_menu dt a:hover,
+header .bottom_menu dd a:hover{
   color: #006f40;
 }
 /* header_성진영(종료) */
@@ -302,13 +318,11 @@ header .modal_wrap .inner_form .feedback {
   position: absolute;
 }
 
-.sec2 .slides li .sec2img{
-  width: 360px;
-  overflow: hidden;
+.sec2 .slides li .sec2img .sce2_table{
+  transition: .3s;
 }
 
 .sec2 .slides li .sec2img:hover .sce2_table{
-  transition: .3s ;
   opacity: 1;
 }
 
@@ -510,9 +524,12 @@ header .modal_wrap .inner_form .feedback {
 .sec5 .sec5_text li > h3 a{
   transition: .3s;
 }
-
+.sec5 .sec5_text li > h3 a.active{
+  color: #006f40;
+}
 .sec5 .sec5_text li > h3 a:hover{
   color: #006f40;
+  opacity: .8;
 }
 
 .sec5 .sec5_text li h3{
@@ -542,12 +559,10 @@ header .modal_wrap .inner_form .feedback {
   top:-20px;
 }
 
-.sec5 .sec5wrap div > p{
+.sec5 .sec5wrap div > img{
   position:absolute;
   right:510px;
   top: 270px; 
-  width: 210px;
-  height: 210px;
   overflow: hidden;
 }
 
@@ -559,14 +574,13 @@ header .modal_wrap .inner_form .feedback {
   overflow: hidden;
 }
 
-.sec5 .sec5wrap div > p img,
 .sec5 .sec5wrap div > a img{
   transition: .3s;
 }
 
-.sec5 .sec5wrap div > p:hover img,
 .sec5 .sec5wrap div > a:hover img{
-  transform: scale(1.1);
+  transform: scale(1.01);
+  opacity: .9;
 }
 
 .sec5 #tab_content{
@@ -707,7 +721,14 @@ header .modal_wrap .inner_form .feedback {
 .top_button {
   position: fixed;
   right: calc(50% + -740px);
-  bottom: 420px;
+  bottom: 100px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+.top_button.active{
+  opacity: 1;
+	visibility: visible;
 }
 .top_button .top_box {
   position:relative;
