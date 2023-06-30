@@ -1,35 +1,35 @@
 /* header_성진영(시작) */
-let headerz = document.querySelector('.bottom_menu'),
-menu = document.querySelectorAll('.bottom_menu .menu_list li'),
-submenu = document.querySelectorAll('.bottom_menu .menu_list dl'),
-headerHeight = headerz.offsetHeight;
-let bottomOST = headerz.offsetTop;
-let submenuHeight = 0;
+let header = document.querySelector('.bottom_menu'),
+headerMenu = document.querySelectorAll('.bottom_menu .menu_list li'),
+headerSubmenu = document.querySelectorAll('.bottom_menu .menu_list dl'),
+headerHeight = header.offsetHeight;
+let headerBottomOST = header.offsetTop;
+let headerSubmenuHeight = 0;
 
-submenu.forEach(item=>{
-  if(item.offsetHeight > submenuHeight){
-      submenuHeight = item.offsetHeight;
+headerSubmenu.forEach(item=>{
+  if(item.offsetHeight > headerSubmenuHeight){
+    headerSubmenuHeight = item.offsetHeight;
   }
 });
 
-console.log(submenuHeight);
-let headerzTotal = `${headerHeight + submenuHeight + 45}px`;
+console.log(headerSubmenuHeight);
+let headerTotal = `${headerHeight + headerSubmenuHeight + 45}px`;
 
-menu.forEach(tem=>{
+headerMenu.forEach(tem=>{
   tem.addEventListener('mouseover',()=>{
-      headerz.style.height = headerzTotal;
-      // headerz.style.paddingBottom = '45px';
+      header.style.height = headerTotal;
+      // header.style.paddingBottom = '45px';
   });
   tem.addEventListener('mouseout',()=>{
-      headerz.style.height = `${headerHeight}px`;
+      header.style.height = `${headerHeight}px`;
   });	
 });
 
 window.addEventListener('scroll',()=>{
   if(window.scrollY > bottomOST){
-      headerz.classList.add('sticky');
+      header.classList.add('sticky');
   }else{
-      headerz.classList.remove('sticky');
+      header.classList.remove('sticky');
   }
 });
 /* header_성진영(종료) */
