@@ -85,6 +85,7 @@ header .bottom_menu .menu_list li{
 header .bottom_menu .menu_list li a{
   width: 70%;
   margin: 0 auto;
+  display: inline-block;
 }
 header .bottom_menu .menu_list li dl{
   position: absolute;
@@ -98,6 +99,7 @@ header .bottom_menu dt a:hover,
 header .bottom_menu dd a:hover{
   color: #006f40;
   border-bottom: 1px solid;
+  display: inline;
 }
 /* header_성진영(종료) */
 
