@@ -39,7 +39,7 @@ header .right a:hover{
   color: #006f40;
   transition: 0.3s;
 }
-.youtube:hover{
+header .youtube:hover{
   background-color: #006f40;
   transition: 0.3s;
 }
