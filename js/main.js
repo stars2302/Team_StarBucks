@@ -26,7 +26,7 @@ headerMenu.forEach(tem=>{
 });
 
 window.addEventListener('scroll',()=>{
-  if(window.scrollY > bottomOST){
+  if(window.scrollY > headerBottomOST){
       header.classList.add('sticky');
   }else{
       header.classList.remove('sticky');
