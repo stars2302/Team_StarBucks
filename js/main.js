@@ -184,14 +184,14 @@ for(let i = 0; i <targetLink.length; i++){
     let orgTarget = e.target.getAttribute('href');
     let tabTarget = orgTarget.replace('#','');//#있는거를 없앰
 
-    for(let x = 0; x < tabContent.length ; x++){
-      tabContent[x].style.display = 'none';//div 다 안보이게
+    for(let j = 0; j < tabContent.length ; j++){
+      tabContent[j].style.display = 'none';//div 다 안보이게
     }
 
     document.getElementById(tabTarget).style.display = "block";//클릭하면보임
     
-    for( let j = 0; j<targetLink.length; j++){
-      targetLink[j].classList.remove('active');//클래스명삭제
+    for( let k = 0; k<targetLink.length; k++){
+      targetLink[k].classList.remove('active');//클래스명삭제
       e.target.classList.add('active');//추가
     }
   }); 
