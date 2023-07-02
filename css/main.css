@@ -737,3 +737,61 @@ header .modal_wrap .inner_form .feedback {
 }
 
 /* footer,top button_천혜영(종료) */
+
+
+/* popup */
+.popup {
+  display: block;
+  width: 700px;
+  background: #fff;
+  position: fixed;
+  top: 50px;
+  z-index: 9999;
+  padding: 40px;
+  border-color: #006f40;
+  border-radius: 3px;
+}
+
+.popup h2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+.popup hr {
+  margin: 15px 0;
+  border: none;
+  border-bottom: 1px solid #006f40;
+}
+
+.popup .info a {
+  font-weight: bold;
+}
+
+.popup .close_wrap {
+  margin-top: 20px;
+} 
+
+.popup .checkbox {
+  float: left;
+}
+
+.popup #close {
+  float: right;
+  cursor: pointer;
+}
+
+.popup .checkbox label {
+  cursor: pointer;
+  color: rgba(80, 80, 80, .7);
+}
+
+.popup #daycheck:checked + label {
+  font-weight: bold;
+  color: #1c1c1c;
+}
+.popup #daycheck:checked + label i {
+  color: #006f40;
+}
+/* popup */
