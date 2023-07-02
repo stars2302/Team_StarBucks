@@ -453,20 +453,20 @@ header .modal_wrap .inner_form .feedback {
 .sec4 .promotion div {
   height: 690px;
   flex: 1;
-  transition: 0.5s;
+  transition: 0.5s ease-out;
   position: relative;
 }
 .sec4 .promotion div:hover {
-  flex: 3;
+  flex: 3.35;
 }
 .sec4 .promotion div:after {
   content: '';
   background: rgba(0, 0, 0, 0);
   position: absolute;
   top:0; left:0px; right:0; bottom:0;
-  transition:  0.5s;
+  transition:  0.3s;
 }
-.sec4 .promotion div:not(:hover):after {
+.sec4 .promotion.active div:not(:hover):after {
   background: rgba(0, 0, 0, .5);
 }
 .sec4 .promotion div a {
