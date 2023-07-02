@@ -576,8 +576,6 @@ header .modal_wrap .inner_form .feedback {
 /* 일단 안보이게 가리기 */
 .sec5 #tab_content > div{
   display: none;
-}[style= "display : block"]{
-  top:0px;
 }
 
 /* sec5 store_최성희(종료) */
