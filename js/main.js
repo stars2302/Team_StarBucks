@@ -283,6 +283,10 @@ let popup = document.querySelector('.popup');
 let popup_closeBtn = popup.querySelector('#close');
 let popup_input = popup.querySelector('#daycheck');
 
+popup.querySelector('.git').addEventListener('click',()=>{
+  window.open('https://github.com/teastz/Team_StarBucks', '_blank');
+});
+
 // setCookie('starbucks','popup',1)
 //쿠키 만들기
 //name - 쿠키이름 / value - 쿠키값 / day - 쿠키기한
