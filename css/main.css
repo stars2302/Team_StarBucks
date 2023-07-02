@@ -779,6 +779,14 @@ header .modal_wrap .inner_form .feedback {
 .popup #close {
   float: right;
   cursor: pointer;
+  background: transparent;
+  padding: 10px 20px;
+  transition: background .3s;
+  border-radius: 3px;
+}
+
+.popup #close:hover {
+  background: rgba(0, 0, 0, .1);
 }
 
 .popup .checkbox label {
