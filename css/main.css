@@ -741,7 +741,6 @@ header .modal_wrap .inner_form .feedback {
 
 /* popup */
 .popup {
-  display: block;
   width: 700px;
   background: #fff;
   position: fixed;
