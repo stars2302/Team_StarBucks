@@ -619,6 +619,9 @@ header .modal_wrap .inner_form .feedback {
 .sec6 .Greener img{
   transition: .3s;
 }
+.sec6 .Greener a{
+  display: block;
+}
 .sec6 .Greener img:hover{
   transform: scale(1.01);
   opacity: .9;
@@ -649,6 +652,9 @@ header .modal_wrap .inner_form .feedback {
 }
 .sec6 .ethical img{
   transition: .3s;
+}
+.sec6 .ethical a{
+  display: block;
 }
 .sec6 .ethical img:hover{
   transform: scale(1.01);
