@@ -585,7 +585,7 @@ header .modal_wrap .inner_form .feedback {
   transition: .3s;
 }
 
-/* 일단 안보이게 가랴기 */
+/* 일단 안보이게 가리기 */
 .sec5 #tab_content > div{
   display: none;
 }
