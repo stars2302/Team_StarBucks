@@ -201,10 +201,6 @@ document.getElementById('tabs1').style.display = "block";//열자마자 첫번�
 /* sec5 store_최성희(종료) */
 
 
-
-
-
-
 /* sec7 notice_천혜영(시작) */  
 //변수 선언
 let sec7_container = document.querySelector('.notice_slide'), //ul
