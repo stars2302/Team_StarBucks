@@ -617,12 +617,11 @@ header .modal_wrap .inner_form .feedback {
   height: 100%;
 }
 .sec6 .Greener img{
-  filter: grayscale(.5);
-  transition: .5s;
+  transition: .3s;
 }
 .sec6 .Greener img:hover{
-  transform: scale(1.05) rotate(1deg);
-  filter: grayscale(0);
+  transform: scale(1.01);
+  opacity: .9;
 }
 .sec6 .Greener h2{
   margin-top: 30px;
@@ -647,15 +646,13 @@ header .modal_wrap .inner_form .feedback {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  filter: grayscale(.5);
 }
 .sec6 .ethical img{
-  filter: grayscale(.5);
-  transition: .5s;
+  transition: .3s;
 }
 .sec6 .ethical img:hover{
-  transform: scale(1.08) rotate(2deg);
-  filter: grayscale(0);
+  transform: scale(1.01);
+  opacity: .9;
 }
 .sec6 .ethical .ethical_story{
   position: absolute;
