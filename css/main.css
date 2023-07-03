@@ -663,7 +663,6 @@ header .modal_wrap .inner_form .feedback {
 .sec7 ul {
   float: left;
   position: relative;
-  transition: 0.5s ease-out;
 }
 .sec7 .notice_all {
   font-weight: bold;
