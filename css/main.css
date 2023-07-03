@@ -446,27 +446,37 @@ header .modal_wrap .inner_form .feedback {
   font-weight: bold;
   text-transform: uppercase;
 }
-.sec4 .promotion {
-  display: flex;
-  gap: 20px;
-}
-.sec4 .promotion div {
+.sec4 .promotion div{
   height: 690px;
-  flex: 1;
-  transition: 0.5s ease-out;
+  width: 305px;
+  transition: 0.3s;
   position: relative;
 }
-.sec4 .promotion div:hover {
-  flex: 3.35;
+.sec4 .event_1, 
+.sec4 .event_2,
+.sec4 .event_3 {
+  float: left;
 }
-.sec4 .promotion div:after {
+.sec4 .event_4 {
+  float: right;
+}
+.sec4 .promotion.active div:hover{
+  width: 635px;
+} 
+.sec4 .promotion.active div:after{
   content: '';
   background: rgba(0, 0, 0, 0);
   position: absolute;
   top:0; left:0px; right:0; bottom:0;
   transition:  0.3s;
 }
-.sec4 .promotion.active div:not(:hover):after {
+.sec4 .promotion.active div+div:after{
+  left:20px;
+}
+.sec4 .promotion.active div:not(:hover){
+  width: 195px;
+}
+.sec4 .promotion.active div:not(:hover):after{
   background: rgba(0, 0, 0, .5);
 }
 .sec4 .promotion div a {
@@ -474,10 +484,13 @@ header .modal_wrap .inner_form .feedback {
   width: 100%;
   height: 100%;
 }
-.sec4 .promotion img {
+.sec4 .promotion img{
   width:100%;
   height:100%;
   object-fit:cover;
+}
+.sec4 .promotion div + div {
+  padding-left: 20px;
 }
 
 /* sec4 promotion_천혜영(종료) */
