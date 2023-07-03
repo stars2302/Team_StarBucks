@@ -204,29 +204,59 @@ document.getElementById('tabs1').style.display = "block";//열자마자 첫번�
 /* sec7 notice_천혜영(시작) */  
 //변수 선언
 let sec7_container = document.querySelector('.notice_slide'), //ul
-    sec7_slides = sec7_container.querySelectorAll('li') //각 슬라이드
+    sec7_slides = sec7_container.querySelectorAll('li'), //각 슬라이드
     sec7_count = sec7_slides.length, //슬라이드 갯수
-    sec7_height = 60 //움직일 높이
+    sec7_height = 60, //움직일 높이
     sec7_idx = 0;
-console.log();
+
+//마지막 슬라이드 복제 함수
+function sec7_clone(){
+  let sec7_cloneLast = sec7_container.lastElementChild.cloneNode(true);
+  sec7_container.insertBefore(sec7_cloneLast, sec7_container.firstElementChild);
+} 
+sec7_clone();
+
+//복제된 슬라이드를 포함한 새로운 슬라이드 변수
+let sec7_newSlides = document.querySelectorAll(".notice_slide li");
+sec7_countClone = sec7_newSlides.length;
 
 //공지사항 슬라이드 이동함수
 function sec7_move(num){
   sec7_container.style.top = `${-num*(sec7_height)}px`;
+  sec7_container.style.transition = `${0.5}s ease-out`;
   sec7_idx = num;
   console.log(sec7_idx);
+  //마지막 슬라이드 일때
+  if(sec7_idx === sec7_countClone - 1){
+    //0.5초동안 복제한 첫번째에서 진짜 첫번째 위치로 이동
+    setTimeout(()=>{
+      sec7_container.style.top = "0px";
+      sec7_container.style.transition = `${0}s ease-out`;
+    }, 500);
+    sec7_idx = 0;
+  }
 }
 sec7_move(0);
 
 //공지사항 자동 슬라이드
 function sec7_auto(){
-  timer = setInterval(()=>{
-    let nextIdx = (sec7_idx + 1) % sec7_count;
+  sec7_timer = setInterval(()=>{
+    let nextIdx = (sec7_idx + 1) % sec7_countClone;
     sec7_move(nextIdx);
   },3000);
 }
 sec7_auto();
 
+//슬라이드에 마우스 있을때/없을때 작동
+sec7_container.addEventListener('mouseover',()=>{
+  clearInterval(sec7_timer);
+});
+sec7_container.addEventListener('mouseout',()=>{
+  sec7_timer = setInterval(()=>{
+    let nextIdx = (sec7_idx + 1) % sec7_countClone;
+    sec7_move(nextIdx);
+  },3000);
+});
 /* sec7 notice_천혜영(종료) */
 
 /* top button_천혜영(시작) */
