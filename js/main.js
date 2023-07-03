@@ -44,14 +44,32 @@ window.addEventListener('scroll',()=>{
 
 
 /* header modal_나서영(시작) */
-let modal_loginForm = document.querySelector('header .modal_wrap .login_form');
+let modal_wrapper = document.querySelector('header .modal_wrap');
+let modal_loginForm = modal_wrapper.querySelector('.login_form');
 let modal_loginInput = modal_loginForm.querySelectorAll('.field input');
 let modal_loginFeedback = modal_loginForm.querySelector('.login_func .feedback');
+let header_loginBtn = document.querySelector('header .right .login_btn');
+let modal_closeBtn = modal_wrapper.querySelector('.close_btn');
+
+
+//header의 로그인버튼은 클릭하면
+header_loginBtn.addEventListener('click',()=>{
+  //modal에 클래스 show 추가해서 모달 열기
+  modal_wrapper.classList.add('show');
+});
+
+//모달의 close button을 클릭하면
+modal_closeBtn.addEventListener('click',()=>{
+  //modal에 클래스 show 제거해서 모달 닫기
+  modal_wrapper.classList.remove('show');
+});
+
+
 
 //로그인 폼에 전송이벤트가 일어나면
-modal_loginForm.addEventListener('submit',()=>{
+modal_loginForm.addEventListener('submit',(e)=>{
   //전송기능을 막고
-  console.log(e);
+  e.preventDefault();
 
 
   let completed = 0;

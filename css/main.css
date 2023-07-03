@@ -101,7 +101,13 @@ header .bottom_menu dd a:hover{
 
 /* header modal_나서영(시작) */
 header .modal_wrap {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+header .modal_wrap.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 header .modal_wrap form {
