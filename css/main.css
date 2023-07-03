@@ -103,6 +103,7 @@ header .bottom_menu dd a:hover{
 header .modal_wrap {
   visibility: hidden;
   opacity: 0;
+  transition: .3s;
 }
 
 header .modal_wrap.show {
