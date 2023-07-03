@@ -449,7 +449,7 @@ header .modal_wrap .inner_form .feedback {
 .sec4 .promotion div{
   height: 690px;
   width: 305px;
-  transition: 0.3s;
+  transition: 0.3s ease-out;
   position: relative;
 }
 .sec4 .event_1, 
