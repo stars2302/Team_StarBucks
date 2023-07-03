@@ -459,7 +459,9 @@ header .modal_wrap .inner_form .feedback {
 
 
 /* sec4 promotion_천혜영(시작) */
-.sec4 .promotion h2 {
+/* 기본 4등분 : 1280 - (20+20+20) = 1220 / 4 = 305 */
+/* hover : 1280 - (20+20+20) = 1220 [635/195/195/195] */
+.sec4 h2 {
   text-align: center;
   font-size: 42px;
   font-weight: bold;
@@ -468,28 +470,50 @@ header .modal_wrap .inner_form .feedback {
 .sec4 .promotion div{
   height: 690px;
   width: 305px;
-  overflow:hidden;
-  margin:0 auto;
-  float: left;
-  transition: width 0.3s;
+  transition: 0.3s ease-out;
+  position: relative;
 }
-/* .promotion div[class^=event]:hover{
+.sec4 .event_1, 
+.sec4 .event_2,
+.sec4 .event_3 {
+  float: left;
+}
+.sec4 .event_4 {
+  float: right;
+}
+.sec4 .promotion.active div:hover{
   width: 635px;
-}  */
+} 
+.sec4 .promotion.active div:after{
+  content: '';
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top:0; left:0px; right:0; bottom:0;
+  transition:  0.3s;
+}
+.sec4 .promotion.active div+div:after{
+  left:20px;
+}
+.sec4 .promotion.active div:not(:hover){
+  width: 195px;
+}
+.sec4 .promotion.active div:not(:hover):after{
+  background: rgba(0, 0, 0, .5);
+}
+.sec4 .promotion div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .sec4 .promotion img{
   width:100%;
   height:100%;
   object-fit:cover;
 }
 .sec4 .promotion div + div {
-  margin-left: 20px;
+  padding-left: 20px;
 }
-.max {
-  width: 635px;
-}
-.min {
-  width: 195px;
-}
+
 /* sec4 promotion_천혜영(종료) */
 
 
