@@ -74,9 +74,9 @@
 ## 📚 Tech Stacks
 
 - Semantic Tags ⭕
-- Float(flex,grid)❌
+- float ⭕ (flex,grid ❌)
+- vanilla js ⭕
 - js library ❌
-- vanilla js ❌
 
 <br>
 
