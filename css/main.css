@@ -590,6 +590,11 @@ header .modal_wrap .inner_form .feedback {
   top:-20px;
 }
 
+.sec5 #tab_content div.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .sec5 .sec5wrap div > img{
   position:absolute;
   right:510px;
@@ -628,10 +633,11 @@ transition: 0.3s;
   transition: .3s;
 }
 
-/* 일단 안보이게 가리기 */
+/* 일단 안보이게 가리기 
 .sec5 #tab_content > div{
   display: none;
 }
+*/
 
 /* sec5 store_최성희(종료) */
 
