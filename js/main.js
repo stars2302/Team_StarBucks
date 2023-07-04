@@ -289,11 +289,12 @@ sec7_container.addEventListener('mouseout',()=>{
 
 /* top button_천혜영(시작) */
 let topBtn = document.querySelector('.top_button'),
+    topBtnOffset = document.querySelector('.sec2').offsetTop,
     topScroll = 0;
 
 window.addEventListener('scroll',()=>{
   topScroll = window.scrollY; 
-  if(topScroll > 800){
+  if(topScroll > topBtnOffset - 60){
     topBtn.classList.add('active');
   } else{
     topBtn.classList.remove('active');
