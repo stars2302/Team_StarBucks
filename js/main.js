@@ -251,7 +251,6 @@ function sec7_move(num){
   sec7_container.style.top = `${-num*(sec7_height)}px`;
   sec7_container.style.transition = `${0.5}s ease-out`;
   sec7_idx = num;
-  console.log(sec7_idx);
   //마지막 슬라이드 일때
   if(sec7_idx === sec7_countClone - 1){
     //0.5초동안 복제한 첫번째에서 진짜 첫번째 위치로 이동
