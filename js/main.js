@@ -207,7 +207,6 @@ sec4_event.forEach(item=>{
 /* sec4 promotion_천혜영(종료) */
 
 /* sec5 store_최성희(시작) */  
-
 let targetLink = document.querySelectorAll('.sec5 .tab_menu a'),
     tabContent = document.querySelectorAll('.sec5 #tab_content > div'),
     targetImg = document.querySelector('.sec5 .sec5wrap #tab_content');
@@ -221,17 +220,13 @@ for(let i = 0; i <targetLink.length; i++){
   }); 
 }
 
-
-targetLink.forEach((item,idx)=>{
-  //제목을 클릭하면
-  item.addEventListener('click',(e)=>{
-    //모든 이미지들을 숨기고
+targetLink.forEach((item,idx)=>{//제목을 클릭하면
+  item.addEventListener('click',(e)=>{//모든 이미지들을 숨기고
     tabContent.forEach((tabImg)=>{
       tabImg.classList.add('hide');
     });
 
-    //잠깐의 시간 후에 index에 해당하는 이미지 나타나기
-    setTimeout(()=>{
+    setTimeout(()=>{//잠깐의 시간 후에 index에 해당하는 이미지 나타나기
       tabContent[idx].classList.remove('hide');
     },30);
   });

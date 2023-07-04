@@ -588,8 +588,9 @@ header .modal_wrap .inner_form .feedback {
 .sec5 #tab_content div{
   position: relative;
   top:-20px;
+  transition: 0.3s;
 }
-
+.sec5 #tabs1{z-index: 10;}
 .sec5 #tab_content div.hide {
   opacity: 0;
   visibility: hidden;
