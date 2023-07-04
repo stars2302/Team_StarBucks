@@ -797,7 +797,7 @@ header .modal_wrap .inner_form .feedback {
 
 /* popup */
 .popup {
-  width: 700px;
+  width: 500px;
   background: #fff;
   position: fixed;
   top: 50px;
@@ -820,7 +820,8 @@ header .modal_wrap .inner_form .feedback {
   border-bottom: 1px solid #006f40;
 }
 
-.popup .info a {
+.popup .info a,
+.popup span {
   font-weight: bold;
 }
 
@@ -842,7 +843,8 @@ header .modal_wrap .inner_form .feedback {
 }
 
 .popup #close:hover {
-  background: rgba(0, 0, 0, .1);
+  background: #006f40;
+  color:#fff;
 }
 
 .popup .checkbox label {

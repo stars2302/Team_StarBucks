@@ -246,8 +246,8 @@ function sec7_clone(){
 sec7_clone();
 
 //복제된 슬라이드를 포함한 새로운 슬라이드 변수
-let sec7_newSlides = document.querySelectorAll(".notice_slide li");
-sec7_countClone = sec7_newSlides.length;
+let sec7_newSlides = document.querySelectorAll(".notice_slide li"),
+    sec7_countClone = sec7_newSlides.length;
 
 //공지사항 슬라이드 이동함수
 function sec7_move(num){
