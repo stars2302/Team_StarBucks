@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img width=75px src="https://www.starbucks.co.kr/common/img/common/logo.png">
+<img width=50px src="https://www.starbucks.co.kr/common/img/common/logo.png">
 
 📆 **2023. 05. 19. ~ 2023. 07. 06.** 
 
