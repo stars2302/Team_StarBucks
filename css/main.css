@@ -602,16 +602,6 @@ header .modal_wrap .inner_form .feedback {
   overflow: hidden;
 }
 
-.sec5 .sec5wrap div{
-opacity:1;
-transition:opacity 0.3s;
-}
-
-.sec5 .sec5wrap div.hide{
-opacity:0;
-transition: 0.3s;
-}
-
 .sec5 .sec5wrap div > a{
   position: absolute;
   right:0;
