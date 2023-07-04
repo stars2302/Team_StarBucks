@@ -228,18 +228,6 @@ for(let i = 0; i <targetLink.length; i++){
   }); 
 }
 document.getElementById('tabs1').style.display = "block";//열자마자 첫번째만 보이게
-
-targetLink.forEach((item,idx)=>{
-  item.addEventListener('click',(e)=>{
-    e[idx].display="block";
-  })
-  e[idx].classList.add('hide');
-  setTimeout(()=>{
-    item.setAttribute('src',idx);
-    item.classList.remove('hide');
-  });
-  })
-
 /* sec5 store_최성희(종료) */
 
 
