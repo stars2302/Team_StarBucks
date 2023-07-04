@@ -7,50 +7,69 @@ for(let a of aTag){
 }
 
 /* header_성진영(시작) */
-let headerz = document.querySelector('.bottom_menu'),
-menu = document.querySelectorAll('.bottom_menu .menu_list li'),
-submenu = document.querySelectorAll('.bottom_menu .menu_list dl'),
-headerHeight = headerz.offsetHeight;
-let bottomOST = headerz.offsetTop;
-let submenuHeight = 0;
+let header = document.querySelector('.bottom_menu'),
+headerMenu = document.querySelectorAll('.bottom_menu .menu_list li'),
+headerSubmenu = document.querySelectorAll('.bottom_menu .menu_list dl'),
+headerHeight = header.offsetHeight;
+let headerBottomOST = header.offsetTop;
+let headerSubmenuHeight = 0;
 
-submenu.forEach(item=>{
-  if(item.offsetHeight > submenuHeight){
-      submenuHeight = item.offsetHeight;
+headerSubmenu.forEach(item=>{
+  if(item.offsetHeight > headerSubmenuHeight){
+    headerSubmenuHeight = item.offsetHeight;
   }
 });
 
-console.log(submenuHeight);
-let headerzTotal = `${headerHeight + submenuHeight}px`;
+console.log(headerSubmenuHeight);
+let headerTotal = `${headerHeight + headerSubmenuHeight + 45}px`;
 
-menu.forEach(tem=>{
+headerMenu.forEach(tem=>{
   tem.addEventListener('mouseover',()=>{
-      headerz.style.height = headerzTotal;
+      header.style.height = headerTotal;
+      // header.style.paddingBottom = '45px';
   });
   tem.addEventListener('mouseout',()=>{
-      headerz.style.height = `${headerHeight}px`;
+      header.style.height = `${headerHeight}px`;
   });	
 });
 
 window.addEventListener('scroll',()=>{
-  if(window.scrollY > bottomOST){
-      headerz.classList.add('sticky');
+  if(window.scrollY > headerBottomOST){
+      header.classList.add('sticky');
   }else{
-      headerz.classList.remove('sticky');
+      header.classList.remove('sticky');
   }
 });
 /* header_성진영(종료) */
 
 
 /* header modal_나서영(시작) */
-let modal_loginForm = document.querySelector('header .modal_wrap .login_form');
+let modal_wrapper = document.querySelector('header .modal_wrap');
+let modal_loginForm = modal_wrapper.querySelector('.login_form');
 let modal_loginInput = modal_loginForm.querySelectorAll('.field input');
 let modal_loginFeedback = modal_loginForm.querySelector('.login_func .feedback');
+let header_loginBtn = document.querySelector('header .right .login_btn');
+let modal_closeBtn = modal_wrapper.querySelector('.close_btn');
+
+
+//header의 로그인버튼은 클릭하면
+header_loginBtn.addEventListener('click',()=>{
+  //modal에 클래스 show 추가해서 모달 열기
+  modal_wrapper.classList.add('show');
+});
+
+//모달의 close button을 클릭하면
+modal_closeBtn.addEventListener('click',()=>{
+  //modal에 클래스 show 제거해서 모달 닫기
+  modal_wrapper.classList.remove('show');
+});
+
+
 
 //로그인 폼에 전송이벤트가 일어나면
-modal_loginForm.addEventListener('submit',()=>{
+modal_loginForm.addEventListener('submit',(e)=>{
   //전송기능을 막고
-  console.log(e);
+  e.preventDefault();
 
 
   let completed = 0;
@@ -174,6 +193,17 @@ sec3_modal.addEventListener('click',()=>{
 /* sec3 video_나서영(종료) */
 
 /* sec4 promotion_천혜영(시작) */
+let sec4_promotion = document.querySelector('.sec4 .promotion'),
+    sec4_event = sec4_promotion.querySelectorAll('div[class^=event]');
+
+sec4_event.forEach(item=>{
+  item.addEventListener('mouseenter',()=>{
+    sec4_promotion.classList.add('active');
+  });
+  item.addEventListener('mouseleave',()=>{
+    sec4_promotion.classList.remove('active');
+  });
+})
 /* sec4 promotion_천혜영(종료) */
 
 /* sec5 store_최성희(시작) */  
@@ -184,47 +214,20 @@ for(let i = 0; i <targetLink.length; i++){
     let orgTarget = e.target.getAttribute('href');
     let tabTarget = orgTarget.replace('#','');//#있는거를 없앰
 
-    for(let x = 0; x < tabContent.length ; x++){
-      tabContent[x].style.display = 'none';//div 다 안보이게
+    for(let j = 0; j < tabContent.length ; j++){
+      tabContent[j].style.display = 'none';//div 다 안보이게
     }
 
     document.getElementById(tabTarget).style.display = "block";//클릭하면보임
     
-    for( let j = 0; j<targetLink.length; j++){
-      targetLink[j].classList.remove('active');//클래스명삭제
+    for( let k = 0; k<targetLink.length; k++){
+      targetLink[k].classList.remove('active');//클래스명삭제
       e.target.classList.add('active');//추가
     }
   }); 
 }
 document.getElementById('tabs1').style.display = "block";//열자마자 첫번째만 보이게
 /* sec5 store_최성희(종료) */
-
-
-
-/* sec6 brand_성진영(시작) */
-let mainMenu = document.querySelectorAll('.bottom_menu > .menu_list > li'),
-    subMenu = document.querySelectorAll('.bottom_menu .menu_list li'),
-    bottom = document.querySelector('.bottom_menu'),
-    bottomHeight = bottom.offsetHeight;
-
-let subMenuHeight = 0;
-subMenu.forEach(item=>{
-  if(item.offsetHeight > subMenuHeight){
-    subMenuHeight = item.offsetHeight;
-  }
-});
-
-let bottomTotalHeight = `${bottomHeight + subMenuHeight + 30}px`;
-
-mainMenu.forEach(item=>{
-  item.addEventListener('mouseover',()=>{
-    bottom.style.height = bottomTotalHeight;
-  });
-  item.addEventListener('mouseout',()=>{
-    bottom.style.height = `${bottomHeight}px`;
-  });
-});
-/* sec6 brand_성진영(종료) */
 
 
 /* sec7 notice_천혜영(시작) */  
@@ -305,3 +308,64 @@ topBtn.addEventListener('click',()=>{
   });
 });
 /* top button_천혜영(종료) */
+
+
+/* popup */
+let popup = document.querySelector('.popup');
+let popup_closeBtn = popup.querySelector('#close');
+let popup_input = popup.querySelector('#daycheck');
+
+popup.querySelector('.git').addEventListener('click',()=>{
+  window.open('https://github.com/teastz/Team_StarBucks', '_blank');
+});
+
+// setCookie('starbucks','popup',1)
+//쿠키 만들기
+//name - 쿠키이름 / value - 쿠키값 / day - 쿠키기한
+function setCookie(name, value, day){
+  //day - 오늘날짜부터 정해진 기한까지 설정
+  let date = new Date();
+  date.setDate(date.getDate() + day);
+  
+  document.cookie = `${name}=${value};expires= ${date.toUTCString()}`;
+}//setCookie func
+
+
+//쿠키 있는지 확인해서 popup 보일지 결정
+function cookieCheck(name){
+  //존재하는 쿠키들을 배열로 만들기
+  let cookieArr = document.cookie.split(';');
+  let visited = false;
+
+  //쿠키 배열 중
+  for(let cookie of cookieArr){
+    //지정한 쿠키가 있으면
+    if(cookie.search(name) > -1){
+      //visited를 true로 변경하기(+ dialog 숨기기)
+      visited = true;
+      break;
+    }
+  }
+
+  //만약 visited의 값이 false면 dialog가 보인다
+  if(!visited){
+    popup.setAttribute('open','');
+  }
+
+}//cookieCheck func
+cookieCheck('starbucks');
+
+
+//close클릭하면
+popup_closeBtn.addEventListener('click',()=>{
+  //'오늘안보기'의 체크 유무에 상관없이 팝업을 닫는다
+  popup.removeAttribute('open');
+
+  //만약 '오늘안보기'에 체크 되어있다면, 쿠키만들고(기한 1일) 아니면 제거
+  if(popup_input.checked){
+    setCookie('starbucks','popup',1)
+  } else{
+    setCookie('starbucks','popup',-1)
+  }
+});//closeBtn click
+/* popup */
