@@ -207,8 +207,9 @@ sec4_event.forEach(item=>{
 /* sec4 promotion_천혜영(종료) */
 
 /* sec5 store_최성희(시작) */  
-let targetLink = document.querySelectorAll('.sec5 .tab_menu a');
-let tabContent = document.querySelectorAll('.sec5 #tab_content > div');
+let targetLink = document.querySelectorAll('.sec5 .tab_menu a'),
+    tabContent = document.querySelectorAll('.sec5 #tab_content > div'),
+    targetImg = document.querySelector('.sec5 .sec5wrap #tab_content');
 for(let i = 0; i <targetLink.length; i++){
   targetLink[i].addEventListener('click',(e)=>{//a태그들마다 클릭하면 할 일
     let orgTarget = e.target.getAttribute('href');
@@ -227,6 +228,18 @@ for(let i = 0; i <targetLink.length; i++){
   }); 
 }
 document.getElementById('tabs1').style.display = "block";//열자마자 첫번째만 보이게
+
+targetLink.forEach((item,idx)=>{
+  item.addEventListener('click',(e)=>{
+    e[idx].display="block";
+  })
+  e[idx].classList.add('hide');
+  setTimeout(()=>{
+    item.setAttribute('src',idx);
+    item.classList.remove('hide');
+  });
+  })
+
 /* sec5 store_최성희(종료) */
 
 
