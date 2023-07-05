@@ -280,10 +280,7 @@ sec7_container.addEventListener('mouseover',()=>{
   clearInterval(sec7_timer);
 });
 sec7_container.addEventListener('mouseout',()=>{
-  sec7_timer = setInterval(()=>{
-    let nextIdx = (sec7_idx + 1) % sec7_countClone;
-    sec7_move(nextIdx);
-  },3000);
+  sec7_auto();
 });
 /* sec7 notice_천혜영(종료) */
 

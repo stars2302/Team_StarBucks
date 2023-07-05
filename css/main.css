@@ -718,7 +718,8 @@ header .modal_wrap .inner_form .feedback {
   font-weight: bold;
   float: right;
 }
-.sec7 .container a:hover, .footer .copyright a:hover {
+.sec7 .container a:hover, 
+.footer .copyright a:hover {
   border-bottom: 1px solid;
 }
 /* sec7 notice_천혜영(종료) */
