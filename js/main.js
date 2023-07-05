@@ -221,26 +221,30 @@ sec4_event.forEach(item=>{
 /* sec4 promotion_천혜영(종료) */
 
 /* sec5 store_최성희(시작) */  
-let targetLink = document.querySelectorAll('.sec5 .tab_menu a');
-let tabContent = document.querySelectorAll('.sec5 #tab_content > div');
+let targetLink = document.querySelectorAll('.sec5 .tab_menu a'),
+    tabContent = document.querySelectorAll('.sec5 #tab_content > div'),
+    targetImg = document.querySelector('.sec5 .sec5wrap #tab_content');
+
 for(let i = 0; i <targetLink.length; i++){
   targetLink[i].addEventListener('click',(e)=>{//a태그들마다 클릭하면 할 일
-    let orgTarget = e.target.getAttribute('href');
-    let tabTarget = orgTarget.replace('#','');//#있는거를 없앰
-
-    for(let j = 0; j < tabContent.length ; j++){
-      tabContent[j].style.display = 'none';//div 다 안보이게
-    }
-
-    document.getElementById(tabTarget).style.display = "block";//클릭하면보임
-    
     for( let k = 0; k<targetLink.length; k++){
       targetLink[k].classList.remove('active');//클래스명삭제
       e.target.classList.add('active');//추가
     }
   }); 
 }
-document.getElementById('tabs1').style.display = "block";//열자마자 첫번째만 보이게
+
+targetLink.forEach((item,idx)=>{//제목을 클릭하면
+  item.addEventListener('click',(e)=>{//모든 이미지들을 숨기고
+    tabContent.forEach((tabImg)=>{
+      tabImg.classList.add('hide');
+    });
+
+    setTimeout(()=>{//잠깐의 시간 후에 index에 해당하는 이미지 나타나기
+      tabContent[idx].classList.remove('hide');
+    },30);
+  });
+});
 /* sec5 store_최성희(종료) */
 
 
@@ -268,7 +272,7 @@ function sec7_move(num){
   sec7_container.style.top = `${-num*(sec7_height)}px`;
   sec7_container.style.transition = `${0.5}s ease-out`;
   sec7_idx = num;
-  console.log(sec7_idx);
+  // console.log(sec7_idx);
   //마지막 슬라이드 일때
   if(sec7_idx === sec7_countClone - 1){
     //0.5초동안 복제한 첫번째에서 진짜 첫번째 위치로 이동
