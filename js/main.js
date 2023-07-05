@@ -264,8 +264,8 @@ function sec7_clone(){
 sec7_clone();
 
 //복제된 슬라이드를 포함한 새로운 슬라이드 변수
-let sec7_newSlides = document.querySelectorAll(".notice_slide li");
-sec7_countClone = sec7_newSlides.length;
+let sec7_newSlides = document.querySelectorAll(".notice_slide li"),
+    sec7_countClone = sec7_newSlides.length;
 
 //공지사항 슬라이드 이동함수
 function sec7_move(num){
@@ -308,11 +308,12 @@ sec7_container.addEventListener('mouseout',()=>{
 
 /* top button_천혜영(시작) */
 let topBtn = document.querySelector('.top_button'),
+    topBtnOffset = document.querySelector('.sec2').offsetTop,
     topScroll = 0;
 
 window.addEventListener('scroll',()=>{
   topScroll = window.scrollY; 
-  if(topScroll > 800){
+  if(topScroll > topBtnOffset - 60){
     topBtn.classList.add('active');
   } else{
     topBtn.classList.remove('active');
