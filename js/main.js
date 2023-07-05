@@ -343,6 +343,11 @@ let popup = document.querySelector('.popup');
 let popup_closeBtn = popup.querySelector('#close');
 let popup_input = popup.querySelector('#daycheck');
 
+
+popup.querySelector('.ppt').addEventListener('click',()=>{
+  window.open('https://docs.google.com/presentation/d/1m01WGy9mBF-rG-kd3tS9JCsyWlXJCcNo/edit#slide=id.p1', '_blank');
+});
+
 popup.querySelector('.git').addEventListener('click',()=>{
   window.open('https://github.com/teastz/Team_StarBucks', '_blank');
 });
