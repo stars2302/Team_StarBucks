@@ -122,10 +122,14 @@ let sec1_bigItemImg = sec1_bigItem.querySelector('img');
 
 //작은이미지를 클릭하면
 sec1_smallItem.forEach((img,idx)=>{
-  img.addEventListener('click',()=>{
+  img.addEventListener('click',(e)=>{
     let targetIdx = idx+1;
     //이미지 바꾸는 함수 실행
     changeImg(sec1_bigItemImg,targetIdx);
+
+    //큰 이미지의 alt값에 해당 음료 이름 넣기
+    let itemTitle = e.currentTarget.querySelector('h3').innerText;
+    sec1_bigItemImg.setAttribute('alt',itemTitle)
   });//click
 }); 
 
@@ -133,14 +137,14 @@ sec1_smallItem.forEach((img,idx)=>{
 function changeImg(target,index){
   //일단 이미지 숨기고
   target.classList.add('hidden');
-  
+
   //잠깐의 시간 후 이미지경로 바뀌면서 나타나면서 크기키우기
   setTimeout(()=>{
     target.setAttribute('src',`img/sec1_item${index}_big.png`);
     target.classList.remove('hidden');
     target.classList.add('active');
   },10);
-  
+
   //크기 키우는 모션이 끝나면 ACTIVE 지우기
   setTimeout(()=>{
     target.classList.remove('active');
