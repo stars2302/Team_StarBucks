@@ -157,16 +157,16 @@ function changeImg(target,index){
 
 
 /* sec2 bestSlide_최성희(시작) */  
-let slideWrapper = document.querySelector('.sec2slide_wrap'),
-    slideContainer = slideWrapper.querySelector('.slides'),
-    slides = slideContainer.querySelectorAll('.slides li'),
+let slideWrapper = document.querySelector('.sec2 .sec2slide_wrap'),
+    slideContainer = slideWrapper.querySelector('.sec2 .slides'),
+    slides = slideContainer.querySelectorAll('.sec2 .slides li'),
     slideCount = slides.length,
     slidePerView = 3,
     slideWith = 360,
     slideMargin = 30,
     currentSlideIdx = 0;
-    prevBtn = document.querySelector('.sec2prev'),
-    nextBtn = document.querySelector('.sec2next');
+    prevBtn = document.querySelector('.sec2 .sec2prev'),
+    nextBtn = document.querySelector('.sec2 .sec2next');
 
     slides.forEach((slide,idx)=>{
       slide.style.left = `${idx*(slideWith+slideMargin)}px`
