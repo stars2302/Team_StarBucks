@@ -497,6 +497,7 @@ header .modal_wrap .inner_form .feedback {
   position: absolute;
   top:0; left:0px; right:0; bottom:0;
   transition:  0.3s;
+  pointer-events: none;
 }
 .sec4 .promotion.active div+div:after{
   left:20px;
