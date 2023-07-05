@@ -99,6 +99,7 @@ header .bottom_menu dd a:hover{
 /* header_성진영(종료) */
 
 
+
 /* header modal_나서영(시작) */
 header .modal_wrap {
   visibility: hidden;
@@ -215,6 +216,9 @@ header .modal_wrap .inner_form .feedback {
   display: none;
 }
 /* header modal_나서영(종료) */
+
+
+
 /* sec1 main_나서영(시작) */
 .sec1 {
   height: 750px;
@@ -298,6 +302,8 @@ header .modal_wrap .inner_form .feedback {
   100%{transform: scale(1);}
 }
 /* sec1 main_나서영(종료) */
+
+
 
 /* sec2 bestSlide_최성희(시작) */
 .sec2 h2{
@@ -405,6 +411,8 @@ header .modal_wrap .inner_form .feedback {
 }
 /* sec2 bestSlide_최성희(종료) */
 
+
+
 /* sec3 video_나서영(시작) */
 .sec3 {
   height: 300px;
@@ -456,6 +464,7 @@ header .modal_wrap .inner_form .feedback {
   transform: translate(-50%,-50%);
 }
 /* sec3 video_나서영(종료) */
+
 
 
 /* sec4 promotion_천혜영(시작) */
@@ -513,8 +522,8 @@ header .modal_wrap .inner_form .feedback {
 .sec4 .promotion div + div {
   padding-left: 20px;
 }
-
 /* sec4 promotion_천혜영(종료) */
+
 
 
 /* sec5 store_최성희(시작) */
@@ -629,12 +638,11 @@ header .modal_wrap .inner_form .feedback {
   display: none;
 }
 */
-
 /* sec5 store_최성희(종료) */
 
 
-/* sec6 brand_성진영(시작) */
 
+/* sec6 brand_성진영(시작) */
 .sec6{
   height: 780px;
   position: relative;
@@ -710,6 +718,7 @@ header .modal_wrap .inner_form .feedback {
 /* sec6 brand_성진영(종료) */
 
 
+
 /* sec7 notice_천혜영(시작) */
 .sec7.notice {
   width: 100%;
@@ -735,6 +744,8 @@ header .modal_wrap .inner_form .feedback {
   border-bottom: 1px solid;
 }
 /* sec7 notice_천혜영(종료) */
+
+
 
 /* footer,top button_천혜영(시작) */
 .footer {
@@ -804,8 +815,8 @@ header .modal_wrap .inner_form .feedback {
   from {transform: translateY(2px); opacity: 1;}
   100% {transform: translateY(-5px); opacity: .5;}
 }
-
 /* footer,top button_천혜영(종료) */
+
 
 
 /* popup */

@@ -7,6 +7,7 @@ for(let a of aTag){
 }
 
 
+
 /* header_성진영(시작) */
 let header = document.querySelector('.bottom_menu'),
 headerMenu = document.querySelectorAll('.bottom_menu .menu_list li'),
@@ -114,6 +115,7 @@ modal_loginForm.addEventListener('submit',(e)=>{
 /* header modal_나서영(종료) */
 
 
+
 /* sec1 main_나서영(종료) */
 let sec1_smallItem = document.querySelectorAll('.sec1 .items li ');
 let sec1_bigItem = document.querySelector('.sec1 .big_item');
@@ -153,6 +155,7 @@ function changeImg(target,index){
 /* sec1 main_나서영(종료) */  
 
 
+
 /* sec2 bestSlide_최성희(시작) */  
 let slideWrapper = document.querySelector('.sec2slide_wrap'),
     slideContainer = slideWrapper.querySelector('.slides'),
@@ -189,22 +192,24 @@ let slideWrapper = document.querySelector('.sec2slide_wrap'),
     });
 /* sec2 bestSlide_최성희(종료) */
 
+
+
 /* sec3 video_나서영(시작) */
 let sec3_banner = document.querySelector('.sec3 .container');
 let sec3_modal = document.querySelector('.sec3 .modal_wrap');
-
 
 //sec3 banner클릭하면 modal의 visible클래스를 추가하여 나타나기
 sec3_banner.addEventListener('click',()=>{
   sec3_modal.classList.add('visible');
 });
 
-
 //modal 아무곳이나 클릭하면 visible클래스를 제거하여 숨기기
 sec3_modal.addEventListener('click',()=>{
   sec3_modal.classList.remove('visible');
 });
 /* sec3 video_나서영(종료) */
+
+
 
 /* sec4 promotion_천혜영(시작) */
 let sec4_promotion = document.querySelector('.sec4 .promotion'),
@@ -219,6 +224,8 @@ sec4_event.forEach(item=>{
   });
 })
 /* sec4 promotion_천혜영(종료) */
+
+
 
 /* sec5 store_최성희(시작) */  
 let targetLink = document.querySelectorAll('.sec5 .tab_menu a'),
@@ -246,6 +253,7 @@ targetLink.forEach((item,idx)=>{//제목을 클릭하면
   });
 });
 /* sec5 store_최성희(종료) */
+
 
 
 /* sec7 notice_천혜영(시작) */  
@@ -306,6 +314,8 @@ sec7_container.addEventListener('mouseout',()=>{
 });
 /* sec7 notice_천혜영(종료) */
 
+
+
 /* top button_천혜영(시작) */
 let topBtn = document.querySelector('.top_button'),
     topBtnOffset = document.querySelector('.sec2').offsetTop,
@@ -328,6 +338,7 @@ topBtn.addEventListener('click',()=>{
   });
 });
 /* top button_천혜영(종료) */
+
 
 
 /* popup */

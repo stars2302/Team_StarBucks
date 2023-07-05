@@ -163,7 +163,6 @@ form .field input::placeholder {
 
 form .field:focus-within {
   border: 1px solid #006f40;
-  /* border-width: 2px 1px; */
 }
 
 form .field:focus-within i {
@@ -172,7 +171,6 @@ form .field:focus-within i {
 
 form .field:focus-within i,
 form .field:focus-within input {
-  /* line-height: 46px; */
   opacity: 1;
 }
 
