@@ -17,10 +17,61 @@
 
 ## 🖥️ Screenshots
 
-|<img src="http://semo0420.dothome.co.kr/starbucks/starbucks_design.jpg">|
+<div align="center">
+  
+|Header|
 |:-:|
-|Header, Sec1_main, Sec2_bestSlide, Sec3_video, Sec4_promotion, Sec5_store, Sec6_brand, Footer|
+|<img width=600 src="https://github.com/teastz/Team_StarBucks/assets/103012829/f024860b-abdd-40bc-8478-a60686e968b3">|
 
+<br>
+
+|Header Login|
+|:-:|
+|<img width=600 src="https://github.com/teastz/Team_StarBucks/assets/103012829/0013fe64-fb97-4c76-888b-e5febe4ca586">|
+
+<br>
+
+|Sec1_main|
+|:-:|
+|<img width=600 src="https://github.com/teastz/Team_StarBucks/assets/103012829/8c1ba4b8-139e-49ff-b304-53add9a1a273">|
+
+<br>
+
+|Sec2_bestSlide|
+|:-:|
+|<img width=600 src="https://github.com/teastz/Team_StarBucks/assets/103012829/b5d74e1b-00e1-4a6c-a07d-a8539c924471">|
+
+<br>
+
+|Sec3_video|
+|:-:|
+|<img width=600 src="https://github.com/teastz/Team_StarBucks/assets/103012829/515d93e3-d6d2-4cde-b10c-628b79a16035">|
+
+<br>
+
+|Sec4_promotion|
+|:-:|
+|<img width=600 src="https://github.com/teastz/Team_StarBucks/assets/103012829/2581d12e-56d1-4734-8d62-4cfa729f9f95">|
+
+<br>
+
+|Sec5_store|
+|:-:|
+|<img width=600 src="https://github.com/teastz/Team_StarBucks/assets/103012829/31c36d4e-8523-486b-9382-5f8f64e3ff28">|
+
+<br>
+
+|Sec6_brand|
+|:-:|
+|<img width=600 src="https://github.com/teastz/Team_StarBucks/assets/103012829/728aaaa8-cfa2-411f-9bb5-4ff703bf0732">|
+
+<br>
+
+|Footer|
+|:-:|
+|<img width=600 src="https://github.com/teastz/Team_StarBucks/assets/103012829/7a1085e3-e0dc-473e-afc1-1cec306cba43">|
+
+</div>
 <br>
 
 ## 🧑🏻‍💻👩🏻‍💻 Members
