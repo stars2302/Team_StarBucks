@@ -6,7 +6,7 @@
 
 📆 **2023. 05. 19. ~ 2023. 07. 06.** 
 
-**1차 STARBUCKS RENEWAK PROJECT**
+**1차 STARBUCKS RENEWAL PROJECT**
 
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/> 
@@ -34,7 +34,7 @@
 
 ## Description
 
-🖐 Hello there! We are team #302. Let us introduce our web page, STARBUCKS RENEWAK PROJECT!
+🖐 Hello there! We are team #302. Let us introduce our web page, STARBUCKS RENEWAL PROJECT!
 
 
 ### Design and Implement
@@ -55,7 +55,7 @@
 ## Expectations
 
 - Complex Site Map Configuration and Collapse
-- HTML5 Semantic Tags, Web Compatible Sites
+- HTML5 Semantic Tags, Web-Compatible Sites
 - Improved usability so you can easily find the information you want
 - Stable design using appropriate colors and proportions
 
