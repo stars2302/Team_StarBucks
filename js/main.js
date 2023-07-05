@@ -25,7 +25,7 @@ headerSubmenu.forEach(item=>{
   }
 });
 
-console.log(headerSubmenuHeight);
+// console.log(headerSubmenuHeight);
 // header총값 = 바텀메뉴OST + dl메뉴크기 + 45px
 let headerTotal = `${headerHeight + headerSubmenuHeight + 45}px`;
 

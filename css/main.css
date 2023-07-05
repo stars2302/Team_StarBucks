@@ -468,8 +468,6 @@ header .modal_wrap .inner_form .feedback {
 
 
 /* sec4 promotion_천혜영(시작) */
-/* 기본 4등분 : 1280 - (20+20+20) = 1220 / 4 = 305 */
-/* hover : 1280 - (20+20+20) = 1220 [635/195/195/195] */
 .sec4 h2 {
   text-align: center;
   font-size: 42px;
@@ -632,12 +630,6 @@ header .modal_wrap .inner_form .feedback {
 .sec5 #tab_content{
   transition: .3s;
 }
-
-/* 일단 안보이게 가리기 
-.sec5 #tab_content > div{
-  display: none;
-}
-*/
 /* sec5 store_최성희(종료) */
 
 
