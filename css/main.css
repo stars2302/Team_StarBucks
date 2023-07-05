@@ -817,7 +817,7 @@ header .modal_wrap .inner_form .feedback {
   width: 500px;
   background: #fff;
   position: fixed;
-  top: 50px;
+  top: 150px;
   z-index: 9999;
   padding: 40px;
   border-color: #006f40;
