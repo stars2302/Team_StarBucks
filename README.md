@@ -2,15 +2,15 @@
 
 <div align="center">
 
-<a href="https://teastz.github.io/Team_StarBucks/" target="_blank" style="display: block;">
+<a href="https://teastz.github.io/Team_StarBucks/" target="_blank">
   <img width=50px src="https://www.starbucks.co.kr/common/img/common/logo.png">
 </a>
-(https://teastz.github.io/Team_StarBucks/)
+
 
 📆 **2023. 05. 19. ~ 2023. 07. 06.** 
 
 **1차 STARBUCKS RENEWAL PROJECT**
-
+(https://teastz.github.io/Team_StarBucks/)
 **🥾 [삼영희의 대장정 기획부터 구현까지 PPT](https://docs.google.com/presentation/d/1m01WGy9mBF-rG-kd3tS9JCsyWlXJCcNo/edit#slide=id.p63)**
 
 
