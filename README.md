@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<a href="https://teastz.github.io/Team_StarBucks/" target="_blank">
+<a href="https://teastz.github.io/Team_StarBucks/" target="_blank" style="display: block;">
   <img width=50px src="https://www.starbucks.co.kr/common/img/common/logo.png">
 </a>
 (https://teastz.github.io/Team_StarBucks/)
