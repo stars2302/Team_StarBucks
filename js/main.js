@@ -2,9 +2,12 @@
 let aTag = document.getElementsByTagName('a');
 for(let a of aTag){
   a.addEventListener('click',(e)=>{
-    e.preventDefault();
+    if(!a.classList.contains('link')){
+      e.preventDefault();
+    }
   });
 }
+
 
 
 
@@ -402,3 +405,17 @@ popup_closeBtn.addEventListener('click',()=>{
   }
 });//closeBtn click
 /* popup */
+
+
+// login_nav
+let login_link = document.querySelector('.login_nav');
+let $event = new Event("click", {
+  bubbles: true,
+  cancelable: true
+});
+
+login_link.addEventListener('click',(e)=>{
+  e.preventDefault();
+  header_loginBtn.dispatchEvent($event);
+  popup.removeAttribute('open');
+});

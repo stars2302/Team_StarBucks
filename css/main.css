@@ -879,4 +879,8 @@ header .modal_wrap .inner_form .feedback {
 .popup #daycheck:checked + label i {
   color: #006f40;
 }
+
+.popup .work a:hover {
+  border-bottom: 1px solid #000;
+}
 /* popup */
