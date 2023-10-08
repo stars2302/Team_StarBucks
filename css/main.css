@@ -818,22 +818,24 @@ header .modal_wrap .inner_form .feedback {
   width: 500px;
   background: #fff;
   position: fixed;
-  top: 150px;
+  top: 50px;
   z-index: 9999;
-  padding: 40px;
+  padding: 15px 25px;
   border-color: #006f40;
   border-radius: 3px;
+  font-size: 14px;
+  line-height: 27px;
 }
 
 .popup h2 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 50px;
+  line-height: 40px;
   margin-bottom: 10px;
 }
 
 .popup hr {
-  margin: 15px 0;
+  margin: 7px 0;
   border: none;
   border-bottom: 1px solid #006f40;
 }
@@ -844,7 +846,7 @@ header .modal_wrap .inner_form .feedback {
 }
 
 .popup .close_wrap {
-  margin-top: 20px;
+  margin-top: 10px;
 } 
 
 .popup .checkbox {
